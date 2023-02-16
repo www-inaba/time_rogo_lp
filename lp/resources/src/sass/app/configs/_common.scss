@@ -14,7 +14,7 @@ body {
   color: map-get(map-get($font, color), text);
   min-width: 1140px;
   font-size: 14px;
-  background: #F2F2F0;
+  background: #E3E0D8;
   font-weight: 500;
   @include mq(m){
     min-width: inherit;
