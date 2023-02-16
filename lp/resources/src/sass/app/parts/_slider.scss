@@ -6,6 +6,7 @@
   &-contets {
   }
   &-list {
+    margin-bottom: 20px;
     &-item {
       transform: scale(0.7);
       transition: 0.5s all var(--transition);
@@ -68,6 +69,24 @@
           }
         }
       }
+    }
+  }
+  &-option {
+    &-arrow {
+      display:block;
+      color: var(--main-color);
+      &__prev {
+        margin-right: auto;
+      }
+      &__next {
+        margin-left: 0;
+      }
+    }
+    &-number {
+      margin-left: auto;
+      margin-right: 10px;
+      width: auto !important;
+      font-size: 12px;
     }
   }
 }
