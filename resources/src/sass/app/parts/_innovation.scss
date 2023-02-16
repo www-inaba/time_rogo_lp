@@ -1,0 +1,109 @@
+.p_innovation {
+  &-header {
+    width: 220px;
+    @include mq(m){
+      width: 100%;
+      flex-direction: column;
+    }
+    &-name {
+      flex-direction: column;
+      width: 45px;
+      margin: 0 45px 0 0;
+      @include mq(m){
+        width: max-content;
+        flex-direction: row;
+        margin: 0 0 25px 0;
+        display: flex;
+        align-items: center;
+      }
+      span {
+        display: block;
+        @include mq(m){
+          writing-mode: inherit;
+          margin: 0 15px 0 0;
+        }
+      }
+      &-text {
+        font-size: 12px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--text-color);
+        padding: 0 15px 15px 15px;
+        text-align: center;
+        @include mq(m){
+          padding: 0;
+          text-align: left;
+          margin: 0;
+        }
+      }
+      &-number {
+        text-align: center;
+        font-size: 42px;
+        position: relative;
+        left: -3px;
+        @include mq(m){
+          left: 0;
+          text-align: left;
+          font-size: 36px;
+        }
+      }
+    }
+    &-title {
+      font-size: 18px;
+      @include mq(m){
+        writing-mode: inherit;
+        font-size: 16px;
+        margin-bottom: 50px;
+        line-height:2;
+      }
+    }
+  }
+  &-contents {
+    width: 820px;
+    margin-right: auto;
+    &-images {
+      position: relative;
+      width: 470px;
+      margin: 0 auto 80px auto;
+      @include mq(m){
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      figure {
+        position: relative;
+        z-index: 1;
+      }
+      &-bubble {
+        width: 110px;
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        z-index: 2;
+        @include mq(m){
+          width: 88px;
+          top: -20px;
+          left: -20px;
+        }
+        &-in {
+          position: relative;
+        }
+        p {
+          text-align: center;
+          width: 100%;
+          color: white;
+          font-size: 13px;
+          @include mq(m){
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+  &-button {
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 4px;
+    width:max-content;
+    color: var(--text-color);
+    text-align: center;
+  }
+}

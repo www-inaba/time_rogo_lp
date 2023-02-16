@@ -1,0 +1,39 @@
+.p_title {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: 100px;
+  font-size: 12px;
+  @include mq(m){
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+  }
+  &__top {
+    padding-bottom: 0;
+    padding-top:35px ;
+    border-top: 1px solid var(--text-color);
+    border-bottom: none;
+    margin-bottom: 80px;
+    @include mq(m){
+      padding-top:20px ;
+      margin-bottom: 60px;
+    }
+  }
+  &__white {
+    border-top-color:white;
+    color: white;
+  }
+  &-name {
+    display: block;
+    margin-right: auto;
+    &__large {
+      font-size: 16px;
+      @include mq(m){
+        font-size: 14px;
+      }
+    }
+  }
+  &-number {
+    display: block;
+    margin-left: auto;
+  }
+}

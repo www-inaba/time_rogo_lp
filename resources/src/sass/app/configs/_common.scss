@@ -1,0 +1,26 @@
+@use "sass:math";
+
+:root {
+  --text-color: #{map-get(map-get($font, color), text)};
+  --a-color: #{map-get(map-get($font, color), a)};
+  --main-color: #{map-get($color, main)};
+  --bg-color: #{map-get($color, bg)};
+  --transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+body {
+  position: relative;
+  font-family: #{map-get(map-get($font, family), default)};
+  color: map-get(map-get($font, color), text);
+  min-width: 1140px;
+  font-size: 14px;
+  background: #F2F2F0;
+  font-weight: 200;
+  @include mq(m){
+    min-width: inherit;
+    font-size: 14px;
+  }
+}
+
+main {
+}

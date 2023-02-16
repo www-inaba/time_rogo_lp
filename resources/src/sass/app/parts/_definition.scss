@@ -1,0 +1,33 @@
+.p_definition {
+  dl {
+    margin-bottom: 60px;
+    @include mq(m){
+      margin-bottom: 40px;
+    }
+    &:last-child {
+    }
+    dt {
+      margin-bottom: 30px;
+      align-items: first baseline;
+      @include mq(m){
+        margin-bottom: 15px;
+      }
+      i {
+        display: block;
+        color: var(--main-color);
+        font-size: 10px;
+        margin: 0 5px 0 0;
+      }
+      p {
+        font-size: 16px;
+        @include mq(m){
+          font-size: 15px;
+          line-height: 2;
+        }
+      }
+    }
+    dd {
+
+    }
+  }
+}

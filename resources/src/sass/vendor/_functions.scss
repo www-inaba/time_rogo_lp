@@ -1,0 +1,22 @@
+@use "sass:math";
+
+//  pxをvwに変換
+//  margin:get_vw_4(0,30,0,30,1440);
+//  font-size: get_vw(20, 1440);
+//  width:calc(100% - #{get_vw(120, 1440)} ) ;
+@function get_vw($px, $bp) {
+  @if map-has-key($breakpoints, $bp) {
+    $base: map-get($breakpoints, $bp);
+    @return math.div($px, $base) * 100 * 1vw;
+  } @else {
+    // 定義にない場合は、引数のpxで直接指定
+    @return math.div($px, $bp) * 100 * 1vw;
+  }
+}
+@function get_vw_4($px1, $px2, $px3, $px4, $bp) {
+  $t: get_vw($px1, $bp);
+  $r: get_vw($px2, $bp);
+  $b: get_vw($px3, $bp);
+  $l: get_vw($px4, $bp);
+  @return #{$t} #{$r} #{$b} #{$l};
+}

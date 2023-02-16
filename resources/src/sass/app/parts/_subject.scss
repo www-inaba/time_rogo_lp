@@ -1,0 +1,13 @@
+.p_subject {
+  &-title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    @include mq(m){
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+  &-view {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,47 @@
+.p_thumbnailTabs {
+  overflow: hidden;
+  margin-bottom: 60px;
+  &-body {
+    position: relative;
+    @include mq(m){
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  &-contents {
+    @include mq(m){
+      margin: 0 0 30px 0;
+    }
+  }
+  &-list {
+    position: absolute;
+    left: -190px;
+    top: 0;
+    @include mq(m){
+      position: relative;
+      left: auto;
+      top: auto;
+      display: flex;
+    }
+    &-item {
+      width: 110px;
+      margin-bottom: 10px;
+      opacity: .6;
+      transition: 0.5s all var(--transition);
+      &.__isActive {
+        opacity: 1;
+      }
+      @include mq(m){
+        width: 32.66%;
+        margin: 0 1% 0 0;
+        &:nth-child(3n) {
+          margin: 0;
+        }
+      }
+      button {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

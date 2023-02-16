@@ -1,0 +1,40 @@
+// vendor settings & app confings
+@import "vendor/bundle";
+
+// app settigns
+// tips
+@import "app/tips/tips";
+
+// utils
+@import "app/utils/utils";
+@import "app/utils/animation";
+
+// plugins
+@import "app/plugins/plugins";
+
+// parts
+@import "app/parts/button";
+@import "app/parts/background";
+@import "app/parts/title";
+@import "app/parts/section";
+@import "app/parts/headline";
+@import "app/parts/tabs";
+@import "app/parts/innovation";
+@import "app/parts/definition";
+@import "app/parts/gui";
+@import "app/parts/slider";
+@import "app/parts/spec";
+@import "app/parts/subject";
+@import "app/parts/thumbnailTabs";
+@import "app/parts/ohterItem";
+
+// components
+@import "app/components/header";
+@import "app/components/footer";
+@import "app/components/movie";
+@import "app/components/hamburger";
+@import "app/components/navigation";
+@import "app/components/openNav";
+
+// pages
+@import "app/pages/home";

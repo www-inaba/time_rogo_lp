@@ -1,0 +1,3 @@
+mixin img(src, alt = '')
+  - const { width, height } = imageSize(src);
+  img(src=src, alt=alt, width=width, height=height, decoding="async")

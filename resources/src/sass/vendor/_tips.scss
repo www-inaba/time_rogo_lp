@@ -1,0 +1,41 @@
+@use "sass:math";
+
+.t_flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.t_center {
+  @include center;
+}
+.t_floater {
+  @include center;
+}
+.t_txt {
+  line-height: $lineHeight;
+}
+
+@for $i from 1 through 200 {
+  .t_mg#{$i}px {
+    margin-bottom: #{$i}px;
+  }
+}
+@each $key, $val in $breakpoints {
+  @include mq($key) {
+    @for $i from 1 through 10 {
+      .t_mg__#{$key}#{$i}px {
+        margin-bottom: #{$i}px;
+      }
+      .t_mg__#{$key}#{$i}vw {
+        margin-bottom: get_vw($i * 1px, $key);
+      }
+    }
+  }
+}
+
+@each $key, $val in map-get($font, family) {
+  @if ($key != default) {
+    .t_#{$key} {
+      font-family: #{$val};
+    }
+  }
+}

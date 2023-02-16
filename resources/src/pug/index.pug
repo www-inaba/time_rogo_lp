@@ -1,0 +1,757 @@
+extends /templates/_app
+
+block config
+  - const _PATH = "./"
+  - const _PAGENAME = "home"
+
+block meta
+  +meta({
+    title: "タイトルタイトルタイトルタイトル",
+    description: "ディスクリピション",
+  })
+
+block content
+  include /components/include/_header
+  include /components/include/_openNav
+
+  div.mv.swiper-container.u_anime-fade(data-slider="mvSlider" data-anime="addClass")
+    div.mv_list.swiper-wrapper
+      div.mv_list-item.swiper-slide
+        +img(`${_RESOURCES}assets/images/index/mv_1.jpg`, `SWAYLAY`)
+      div.mv_list-item.swiper-slide
+        +img(`${_RESOURCES}assets/images/index/mv_2.jpg`, `SWAYLAY`)
+      div.mv_list-item.swiper-slide
+        +img(`${_RESOURCES}assets/images/index/mv_1.jpg`, `SWAYLAY`)
+      div.mv_list-item.swiper-slide
+        +img(`${_RESOURCES}assets/images/index/mv_2.jpg`, `SWAYLAY`)
+      div.mv_list-item.swiper-slide
+        +img(`${_RESOURCES}assets/images/index/mv_1.jpg`, `SWAYLAY`)
+
+  main(role="main")
+    div.t_wrapper.u_bg.indexSwayley.t_flex
+      div.indexSwayley_view.t_flex
+        div.indexSwayley_title
+          h2.indexSwayley_title-jp.u_letter-spacing200 すこし未来のソファ
+          p.indexSwayley_title-en.t_Roboto.u_weight100.u_letter-spacing50 Little futuristic sofa
+        p.indexSwayley_name.t_Roboto.u_letter-spacing200.u_weight400 SWAYLEY
+      div.indexSwayley_scroll.t_flex
+        p.indexSwayley_scroll-text.u_weight100.u_letter-spacing50.t_Roboto Scroll Down
+        span.indexSwayley_scroll-line
+    div.indexStory#Story
+      div.p_background.t_wrapper.indexStory_wrapper
+        div.p_background-wrapper
+          h2.indexStory_title.t_Roboto.u_letter-spacing100.u_weight100.u_anime-fadeUp(data-anime="addClass") Story
+          h3.indexStory_headline.u_letter-spacing200.u_anime-fadeUp(data-anime="addClass")
+            span
+              |すこし未来の
+              br.u_md
+              |豊かな⽇常をつくる
+          div.indexStory_text.u_lineHeightLarge.u_letter-spacing150.u_anime-fadeUp(data-anime="addClass")
+            | つくり手からつかい手、
+            br.u_md
+            |みんなの手で幸せな生活空間を
+            br.u_md
+            |つくり出すという願いを込めた、
+            br
+            | すこし未来の豊かな⽇常をつくる国内製高品質ソファ、SWAYLEY
+            br
+            | SWAY＝『ゆらぎ』『波長』
+            br
+            | LEY＝『耕す』
+
+    div.indexOffer
+      div.indexOffer_images
+        +img(`${_RESOURCES}assets/images/index/img_story_1.jpg`, `Story01`)
+      div.p_background.t_wrapper.indexOffer_wrapper
+        div.indexOffer_view.t_flex.p_background-wrapper
+          div.indexOffer_contents
+            h2.p_title.t_flex.u_letter-spacing50.t_Roboto.u_anime-fadeUp(data-anime="addClass")
+              span.p_title-name.u_weight400 SWAYLEY
+              span.p_title-number.u_weight100 Story : 01
+            section.p_section
+              h3.p_section-title.u_lineHeight.u_letter-spacing150.u_weight400.u_anime-fadeUp(data-anime="addClass")
+                | よりお客さまの⽬線で、
+                br
+                | 本当にいいソファを
+                br.u_md
+                |提供したい
+              div.p_section-contents.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
+                p
+                  | SWAYLAYは三重県にある30年以上にわたってクッション資材を製造・販売してきたウレタン⼯場から⽣まれました。
+                  br
+                  | SWAYLAYが⽣まれたキッカケは、「あるもどかしさ」です。価格競争のためにコストを削減し、座り⼼地に最も⼤切であるはずのウレタンの品質が、あっさり犠牲にされていることに疑問を感じました。
+                  br
+                  | 最上級品質のウレタンを使ったソファの座り⼼地を、もっと多くの⼈に知ってほしい。
+                  br
+                  | そのような想いから、すべて国内で製造し、妥協のないソファをつくり始めました。
+    div.indexShape
+      div.indexShape_body
+        div.indexShape_images.t_flex
+          div.indexShape_images-sub.u_anime-fadeUp(data-anime="addClass")
+            +img(`${_RESOURCES}assets/images/index/img_story_2_sub_a.jpg`, `Story02`)
+          div.indexShape_images-main.u_anime-fadeUp(data-anime="addClass")
+            +img(`${_RESOURCES}assets/images/index/img_story_2.jpg`, `Story02`)
+        div.p_background.t_wrapper.indexShape_wrapper
+          div.indexShape_view.t_flex.p_background-wrapper
+            div.indexShape_contents
+              h2.p_title.t_flex.u_letter-spacing50.t_Roboto.u_anime-fadeUp(data-anime="addClass")
+                span.p_title-name.u_weight400 SWAYLEY
+                span.p_title-number.u_weight100 Story : 02
+              section.p_section
+                h3.p_section-title.u_lineHeight.u_letter-spacing150.u_weight400.u_anime-fadeUp(data-anime="addClass")
+                  | じっくりと丁寧に国内製造
+                  br
+                  | 「すこし未来のソファ」をカタチに
+                div.p_section-contents.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
+                  p
+                    | SWAYLAYは、フレームや生地、ウレタンに至るまで国内製造にこだわりました。
+                    br
+                    | 企画から製造まで2年の歳月をかけ、国内の製造工場が手と手をとりあい、『すこし未来のソファ』、SWAYLAYをカタチにしました。最上級品質のウレタンをふんだんに使用した、ずっと続く最上級の座り⼼地を、つかい手の皆様へ提供します。
+
+    div.indexSlider
+      div.indexSlider_wrapper.t_wrapper(data-slider="gallery")
+        div.indexSlider_gallery.swiper-wrapper
+          div.indexSlider_gallery-list.swiper-slide
+            +img(`${_RESOURCES}assets/images/index/img_slider_1.jpg`, `SWAYLAY`)
+          div.indexSlider_gallery-list.swiper-slide
+            +img(`${_RESOURCES}assets/images/index/img_slider_2.jpg`, `SWAYLAY`)
+          div.indexSlider_gallery-list.swiper-slide
+            +img(`${_RESOURCES}assets/images/index/img_slider_1.jpg`, `SWAYLAY`)
+          div.indexSlider_gallery-list.swiper-slide
+            +img(`${_RESOURCES}assets/images/index/img_slider_2.jpg`, `SWAYLAY`)
+          div.indexSlider_gallery-list.swiper-slide
+            +img(`${_RESOURCES}assets/images/index/img_slider_1.jpg`, `SWAYLAY`)
+        div.indexSlider_logo.u_anime-fadeUp(data-anime="addClass")
+          +img(`${_RESOURCES}assets/images/index/good_design.svg`, `GOODDESIGN`)
+    div.indexInnovation#Innovation
+      div.t_wrapper
+        h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
+          span.p_title-name.p_title-name__large.u_weight400 Innovation
+          span.p_title-number.u_weight100 5 revolutions
+        h3.p_headline.u_weight400.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
+          span
+            |SWAYLAYソファに秘められた
+            br.u_md
+            |「５つの⾰命」
+        ul.p_tabs.t_flex.u_weight400.u_anime-fadeUp(data-tab-target="innovation" data-anime="addClass")
+          li.p_tabs-list.__isActive
+            button(type="button") 理想の座り心地
+          li.p_tabs-list
+            button(type="button") 驚きの軽さ
+          li.p_tabs-list
+            button(type="button") 上質なデザイン
+          li.p_tabs-list
+            button(type="button")
+              |イージーケアな
+              br.u_md
+              |生地
+          li.p_tabs-list
+            button(type="button") ヘタりにくい
+
+
+
+
+
+        div.p_swichi(data-tab-contents="innovation")
+          div.p_swichi-list
+            section.p_innovation.t_flex
+              div.p_innovation-header.t_flex
+                div.p_innovation-header-name.u_anime-fadeUp(data-anime="addClass")
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-number.t_Roboto 1
+                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150.u_anime-fadeUp(data-anime="addClass")
+                  |『ちょっと座ってみて』と
+                  br.u_md
+                  |勧めたくなる最高の座り心地
+              div.p_innovation-contents
+                div.p_innovation-contents-images
+                  figure.u_anime-fadeUp(data-anime="addClass")
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_1.jpg`, `『ちょっと座ってみて』と勧めたくなる最高の座り心地`)
+                  div.p_innovation-contents-images-bubble
+                    div.p_innovation-contents-images-bubble-in
+                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
+                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
+                        | ちょっと
+                        br
+                        | 座ってみて
+                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                  dl
+                    dt.t_flex
+                      i.icon-arrow_right
+                      p.u_weight400.u_letter-spacing150
+                        |最上級のウレタンで実現した
+                        br.u_md
+                        |理想の座り心地
+                    dd.u_lineHeight
+                      |2種類の最上級ウレタンを組み合わせ、理想的な体圧分散を実現。Swayleyソファは、有名ブランドの最高級ソファにも用いられる最上級品質のウレタン２種をふんだんに使用しています。
+                  dl
+                    dt.t_flex
+                      i.icon-arrow_right
+                      p.u_weight400.u_letter-spacing150
+                        | 自宅でも、オフィスでも
+                    dd.u_lineHeight
+                      | ご自宅ではくつろぐ時間を贅沢なものにしてくれるアイテムとして、オフィスの応接室などでは、お客さまをもてなす最上級のアイテムとして、最上級品質のウレタンが実現する理想の座り心地を、ぜひ直接体験してみてください。
+
+          div.p_swichi-list
+            section.p_innovation.t_flex
+              div.p_innovation-header.t_flex
+                div.p_innovation-header-name.u_anime-fadeUp(data-anime="addClass")
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-number.t_Roboto 2
+                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  |『ちょっと持ってみて』と
+                  br.u_md
+                  |促したくなる、驚くほどの軽さ
+              div.p_innovation-contents
+                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                  figure
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_2.jpg`, `『ちょっと持ってみて』と促したくなる、驚くほどの軽さ`)
+                  div.p_innovation-contents-images-bubble
+                    div.p_innovation-contents-images-bubble-in
+                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
+                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
+                        | ちょっと
+                        br
+                        | 持ってみて
+                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                  dl
+                    dt.t_flex
+                      i.icon-arrow_right
+                      p.u_weight400.u_letter-spacing150
+                        | 強化段ボールを使用したフレームで軽くて丈夫
+                    dd.u_lineHeight
+                      | Swayleyソファは、昨年開催された東京オリンピックでも話題となった強化ダンボールをフレームとして使っています。強化ダンボールの特長は、何よりもその強度と軽さです。従来の木材にまったく劣らない強度をもちながら、とても軽量なため女性やお子さまでもカンタンに持ち運びが可能です。面倒だったソファの下のお掃除も、気分しだいの模様替えも、Swayleyソファなら自由自在。木材やバネを使ったソファと違い、きしみ音がほとんど起こらないのも強化ダンボールのメリットです。
+
+          div.p_swichi-list
+            section.p_innovation.t_flex
+              div.p_innovation-header.t_flex
+                div.p_innovation-header-name.u_anime-fadeUp(data-anime="addClass")
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-number.t_Roboto 3
+                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  |『居心地いいでしょ』と
+                  br.u_md
+                  |言いたくなる、高い質感・デザイン
+              div.p_innovation-contents
+                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                  figure
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_3.jpg`, `『居心地いいでしょ』と言いたくなる、高い質感・デザイン`)
+                  div.p_innovation-contents-images-bubble
+                    div.p_innovation-contents-images-bubble-in
+                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
+                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
+                        | 居心地
+                        br
+                        | いいでしょ
+                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                  dl
+                    dt.t_flex
+                      i.icon-arrow_right
+                      p.u_weight400.u_letter-spacing150
+                        | 空間づくりが自在に楽しめる上質なデザイン
+                    dd.u_lineHeight
+                      | Swayleyソファは、レイアウトを自在にお楽しみいただくために、組み合わせ自由なモジュール型を採用しました。軽く持ち運びもしやすいので、その日の気分や空間の雰囲気に合わせて模様替えを手軽にお楽しみいただけます。シンプルかつ高級感のあるデザインを実現し、生地には心地よい手ざわりと見た目のエレガントさを両立した「アクアクリーン®︎」を採用。カラーは５色からお選びいただけます。ソファは使い捨てるものではなく、長くお使いいただくもの。だからこそ、くつろぎの時間を彩るアイテムとしての、日々の使い勝手を追求したい。
+
+          div.p_swichi-list
+            section.p_innovation.t_flex
+              div.p_innovation-header.t_flex
+                div.p_innovation-header-name
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-number.t_Roboto 4
+                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  |『これは魔法？』と
+                  br.u_md
+                  |驚くほど イージーケアな生地
+              div.p_innovation-contents
+                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                  figure
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_4.jpg`, `『これは魔法？』と驚くほど イージーケアな生地`)
+                  div.p_innovation-contents-images-bubble
+                    div.p_innovation-contents-images-bubble-in
+                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
+                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
+                        | これは魔法？
+                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                  dl
+                    dt.t_flex
+                      i.icon-arrow_right
+                      p.u_weight400.u_letter-spacing150
+                        | きめ細やかな手触りとエレガントな質感「アクアクリーン®」
+                    dd.u_lineHeight
+                      | Swayleyソファは、ちょっとした汚れなら水拭きだけでキレイに落とせる生地、「アクアクリーン®」を採用。水拭きで落ちない汚れがついても、ソファのカバーリングはカンタンに着脱可能。取り外してご自宅でお洗濯できます。小さなお子さまがいらっしゃるご家庭や、大人数で集まって楽しむ空間でも、気兼ねなくお使いいただきたい。この想いから、高級感だけでなくお手入れのカンタンさも兼ね備えた、選りすぐりの生地を採用しました。「水拭きだけで、魔法みたいに汚れが落ちる」「さらに、ご自宅でも手軽にお洗濯できる」この驚きのイージーケア素材の性能を、ぜひその目でお確かめください。
+                a.p_innovation-button.t_flex(target="_blank") 「アクアクリーン®」のメーカーサイトはコチラから
+          div.p_swichi-list
+            section.p_innovation.t_flex
+              div.p_innovation-header.t_flex
+                div.p_innovation-header-name
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-number.t_Roboto 5
+                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  |『ヘタりにくいから長く使える』
+                  br.u_md
+                  |いつまでも最高の座り心地
+              div.p_innovation-contents
+                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                  figure
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_5.jpg`, `『ヘタりにくいから長く使える』いつまでも最高の座り心地`)
+                  div.p_innovation-contents-images-bubble
+                    div.p_innovation-contents-images-bubble-in
+                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
+                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
+                        |長く使える
+                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                  dl
+                    dt.t_flex
+                      i.icon-arrow_right
+                      p.u_weight400.u_letter-spacing150
+                        | ヘタりにくくいつまでも最上級の座り心地
+                    dd.u_lineHeight
+                      | Swayleyソファは、ただ座り心地がいいだけのソファではありません。ヘタりにくく、優れた座り心地がいつまでも続きます。ヘタったソファは底部のバネや木材のゴツゴツとした感触が気になり、心地よく座れなくなってしまいます。場合によっては、姿勢やカラダの歪みの原因となり、腰や背中を痛めてしまうおそれもあります。長く、安心して使い続けられるものをつくりたい。Swayleyソファは、ずっと続く最上級の座り心地で、いつまでも心地よい空間をご提供します。
+
+
+    div.indexMovie.u_anime-fadeUp(data-anime="addClass")
+      div.t_wrapper.indexMovie_body
+        div.indexMovie_title.t_Roboto
+          span.indexMovie_title-name.u_letter-spacing200.u_weight100 SWAYLEY
+          p.indexMovie_title-text.u_letter-spacing100.u_weight400 PLAY MOVIE
+        a(href="javascript:void(0);" youtube_id="aqa9h-nL-TA")
+          div.indexMovie_main
+            +img(`${_RESOURCES}assets/images/index/img_movie_1.jpg`, `movie`)
+            span.indexMovie_button.t_center
+              +img(`${_RESOURCES}assets/images/index/movie.svg`, `movie`)
+
+
+    div.indexSustainability#Sustainability
+      div.indexSustainability_images
+        +img(`${_RESOURCES}assets/images/index/img_sustainability_1.jpg`, `背景`)
+      section.indexSustainability_body.t_wrapper.u_anime-fadeUp(data-anime="addClass")
+        h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.p_title__white
+          span.p_title-name.p_title-name__large.u_weight400 Sustainability
+          span.p_title-number.u_weight100 vision of the future
+        div.indexSustainability_layout.t_flex
+          div.indexSustainability_layout-view
+            h3.indexSustainability_layout-view-title.u_lineHeight.u_letter-spacing150.u_weight400
+              | SWAYLAYに込められた
+              br
+              | 持続可能な未来ヴィジョン
+            div.indexSustainability_layout-view-text.u_lineHeight
+              p
+                | マテリアルメーカーだからこそできる、
+                br
+                | 使いやすさと持続可能性の両⽅を⾒すえた持続可能なサイクル。
+          div.indexSustainability_layout-images
+            +img(`${_RESOURCES}assets/images/index/sustainability_figure.svg`, `ヴィジョン`)
+
+
+
+
+        div.indexSustainability_inner
+          section.indexSustainability_section.u_anime-fadeUp(data-anime="addClass")
+            h3.indexSustainability_section-title.u_lineHeight.u_weight400.u_letter-spacing150 ロングライフ品質
+            div.indexSustainability_section-layout.t_flex
+              div.indexSustainability_section-layout-images
+                +img(`${_RESOURCES}assets/images/index/img_sustainability_list_1.jpg`, `ロングライフ品質`)
+              div.indexSustainability_section-layout-view
+                div.indexSustainability_section-layout-view-text.u_lineHeight.u_letter-spacing50
+                  p
+                    | SWEYLAYソファは、ソファの⼤部分を占めるフレームに、いま注⽬を浴びているサステナブル素材である強化ダンボールを使⽤しています。
+                    br
+                    | 強化段ボールの原料は再⽣紙のため、地球環境への負荷が少なく、コロナ禍によっていっそう加速した⽊材価格の⾼騰問題（ウッドショック）の打開策としても期待されています。
+                ul.u_letter-spacing20.indexSustainability_section-layout-view-list.t_flex
+                  li.indexSustainability_section-layout-view-list-item 森林保護
+                  li.indexSustainability_section-layout-view-list-item CO2削減
+
+          section.indexSustainability_section.u_anime-fadeUp(data-anime="addClass")
+            h3.indexSustainability_section-title.u_lineHeight.u_weight400.u_letter-spacing150 年齢問わず使⽤できる軽さ
+            div.indexSustainability_section-layout.t_flex
+              div.indexSustainability_section-layout-images
+                +img(`${_RESOURCES}assets/images/index/img_sustainability_list_2.jpg`, `年齢問わず使⽤できる軽さ`)
+              div.indexSustainability_section-layout-view
+                div.indexSustainability_section-layout-view-text.u_lineHeight.u_letter-spacing50
+                  p
+                    | 今までのソファは、重量が重く、チカラのある⽅が運んでいました。
+                    br
+                    | SWEYLAYソファは、従来の⽊材にまったく劣らない強度の強化ダンボールを使⽤しています。とても軽量なため⼥性やお⼦さまでもカンタンに持ち運びが可能です。
+                ul.u_letter-spacing20.indexSustainability_section-layout-view-list.t_flex
+                  li.indexSustainability_section-layout-view-list-item ジェンダーレス
+
+
+
+          section.indexSustainability_section.u_anime-fadeUp(data-anime="addClass")
+            h3.indexSustainability_section-title.u_lineHeight.u_weight400.u_letter-spacing150 ロングライフ品質
+            div.indexSustainability_section-layout.t_flex
+              div.indexSustainability_section-layout-images
+                +img(`${_RESOURCES}assets/images/index/img_sustainability_list_3.jpg`, `ロングライフ品質`)
+              div.indexSustainability_section-layout-view
+                div.indexSustainability_section-layout-view-text.u_lineHeight.u_letter-spacing50
+                  p
+                    | 通常のソファは、ある程度⾼価なものであっても平均3〜5年ほどでクッションにヘタりが⽣じてしまうものが多くあります。
+                    br
+                    | SWEYLAYソファは、有名ブランドの最⾼級ソファにも⽤いられる最上級品質のウレタン2種をふんだんに使⽤し、⻑期間ヘタりにくく、何世代にもわたり使⽤していただけます。使い捨て社会のない、未来を⽬指します。
+                ul.u_letter-spacing20.indexSustainability_section-layout-view-list.t_flex
+                  li.indexSustainability_section-layout-view-list-item ロングライフ
+    div.indexLineup#Lineup
+      div.t_wrapper
+        h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
+          span.p_title-name.p_title-name__large.u_weight400 Sofa LINEUP
+          span.p_title-number.u_weight100 5 Color Fabrics
+        h3.p_headline.u_weight400.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
+          span 選べる５⾊の⽣地カラー
+      div.p_slider.u_anime-fadeUp(data-anime="addClass")
+        div.p_slider-wrapper
+          div.p_slider-contets.t_inner.swiper-container(data-slider="lineup")
+            div.swiper-wrapper.p_slider-list
+              //アイボリー
+              div.swiper-slide.p_slider-list-item
+                div.p_slider-list-item-imgaes
+                  +img(`${_RESOURCES}assets/images/index/img_slider_a_list_1.jpg`, `IVORY`)
+                div.p_slider-list-item-view.t_flex
+                  div.p_slider-list-item-view-header
+                    div.p_slider-list-item-view-header-title
+                      p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 IVORY
+                      p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 アイボリー
+                    div.p_slider-list-item-view-header-thumbnail
+                      +img(`${_RESOURCES}assets/images/index/img_slider_a_thumbnail_1.jpg`, `IVORY`)
+                  div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                    p
+                      |すこし⻩みがかった品のある⾊合い。
+                      br
+                      |他の家具と調和しつつ、象⽛のような⾼級感を感じさせやさしい雰囲気に。
+
+
+
+
+
+
+
+              //ライトグレー
+              div.swiper-slide.p_slider-list-item
+                div.p_slider-list-item-imgaes
+                  +img(`${_RESOURCES}assets/images/index/img_slider_a_list_2.jpg`, `IVORY`)
+                div.p_slider-list-item-view.t_flex
+                  div.p_slider-list-item-view-header
+                    div.p_slider-list-item-view-header-title
+                      p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 Light GRAY
+                      p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ライトグレー
+                    div.p_slider-list-item-view-header-thumbnail
+                      +img(`${_RESOURCES}assets/images/index/img_slider_a_thumbnail_2.jpg`, `Light GRAY`)
+                  div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                    p
+                      | あらゆる空間によくなじむ色合い。
+                      br
+                      | 他のカラーとも合わせやすいのでベースカラーとしてのチョイスもアリ
+
+
+
+
+
+
+
+              //ライトグリーン
+              div.swiper-slide.p_slider-list-item
+                div.p_slider-list-item-imgaes
+                  +img(`${_RESOURCES}assets/images/index/img_slider_a_list_3.jpg`, `Light GREEN`)
+                div.p_slider-list-item-view.t_flex
+                  div.p_slider-list-item-view-header
+                    div.p_slider-list-item-view-header-title
+                      p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 Light GREEN
+                      p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ライトグリーン
+                    div.p_slider-list-item-view-header-thumbnail
+                      +img(`${_RESOURCES}assets/images/index/img_slider_a_thumbnail_3.jpg`, `Light GREEN`)
+                  div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                    p
+                      | 鮮やかで明るく、上品な色合い。
+                      br
+                      | かわいらしく、華やかにかつ上品にお部屋に彩りたい方向け。
+
+
+
+
+
+
+
+              //アクアブルー
+              div.swiper-slide.p_slider-list-item
+                div.p_slider-list-item-imgaes
+                  +img(`${_RESOURCES}assets/images/index/img_slider_a_list_4.jpg`, `AQUA BLUE`)
+                div.p_slider-list-item-view.t_flex
+                  div.p_slider-list-item-view-header
+                    div.p_slider-list-item-view-header-title
+                      p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 Light GREEN
+                      p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 アクアブルー
+                    div.p_slider-list-item-view-header-thumbnail
+                      +img(`${_RESOURCES}assets/images/index/img_slider_a_thumbnail_4.jpg`, `AQUA BLUE`)
+                  div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                    p
+                      | 光沢と気品ある色合い。
+                      br
+                      | 南国の海を思わせる緑がかった青はさわやかで清潔感のある空間を演出。
+
+
+
+
+
+
+
+              //シャインブルー
+              div.swiper-slide.p_slider-list-item
+                div.p_slider-list-item-imgaes
+                  +img(`${_RESOURCES}assets/images/index/img_slider_a_list_5.jpg`, `SHINE BLUE`)
+                div.p_slider-list-item-view.t_flex
+                  div.p_slider-list-item-view-header
+                    div.p_slider-list-item-view-header-title
+                      p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 SHINE BLUE
+                      p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 シャインブルー
+                    div.p_slider-list-item-view-header-thumbnail
+                      +img(`${_RESOURCES}assets/images/index/img_slider_a_thumbnail_5.jpg`, `AQUA BLUE`)
+                  div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                    p
+                      | さわやかで大人っぽい色合い。
+                      br
+                      | 無難な色だと物足りない方、ほどよく部屋に彩りを添えたい方にオススメ。
+
+
+      div.p_spec.u_anime-fadeUp(data-anime="addClass")
+        div.t_wrapper.p_spec-wrapper.t_inner
+          p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
+          ul.p_spec-item
+            li.p_spec-item-list
+              dl.t_flex
+                dt.u_letter-spacing50.u_weight400 Sofa Base
+                dd.u_letter-spacing50 W640×D780×H590 SH370 8.4kg
+            li.p_spec-item-list
+              dl.t_flex
+                dt.u_letter-spacing50.u_weight400 Sofa Corner
+                dd.u_letter-spacing50 W640×D780×H590 SH370 11.8kg
+            li.p_spec-item-list
+              dl.t_flex
+                dt.u_letter-spacing50.u_weight400 Ottoman
+                dd.u_letter-spacing50 W780×D780×H590 6.8kg
+
+      a.p_otherItem(href="#Lineup")
+        span.p_otherItem-icon.t_flex
+          i.icon-arrow_dawn
+        span.p_otherItem-text.u_letter-spacing50 他のアイテムを見る
+
+    div.indexItems#Shop
+      div.t_wrapper
+        h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
+          span.p_title-name.p_title-name__large.u_weight400 Other items
+          span.p_title-number.u_weight100 Interior
+      div.t_wrapper
+        ul.p_gui.t_flex.t_Roboto(data-tab-target="item")
+          li.p_gui-list.__isActive
+            button(type="button").u_letter-spacing50.u_weight400
+              span SOFA TABLE
+          li.p_gui-list
+            button(type="button").u_letter-spacing50.u_weight400
+              span CUSHION
+      div.p_swichi.indexSupport_contets(data-tab-contents="item")
+        //SOFA TABLE
+        div.p_swichi-list
+          section.p_subject
+            div.t_inner
+              h3.p_subject-title.u_weight400.u_letter-spacing100 SOFA TABLE
+              div.p_subject-view.u_letter-spacing50.u_lineHeight
+                p
+                  |北海道の択伐されたサステナブルな楢材を敢えて使用しています。自然が生み出した表情のある木目をお楽しみいただけます。
+          div.p_thumbnailTabs
+            div.t_inner.p_thumbnailTabs-body
+              ul.p_thumbnailTabs-list(data-tab-target="item-sub")
+                li.p_thumbnailTabs-list-item.__isActive
+                  button(type="button" aria-label="単品写真")
+                    +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_1.jpg`, `SOFA TABLE`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ1")
+                    +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_2.jpg`, `SOFA TABLE`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ2")
+                    +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_3.jpg`, `SOFA TABLE`)
+
+              div.p_thumbnailTabs-contents(data-tab-contents="item-sub")
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_1.jpg`, `SOFA TABLE`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_2.jpg`, `SOFA TABLE`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_3.jpg`, `SOFA TABLE`)
+          div.p_spec
+            div.t_wrapper.p_spec-wrapper.t_inner
+              p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
+              ul.p_spec-item
+                li.p_spec-item-list
+                    p.u_letter-spacing50 W620×D620×H40
+        //CUSHION
+        div.p_swichi-list
+          section.p_subject
+            div.t_inner
+              h3.p_subject-title.u_weight400.u_letter-spacing100 CUSHION
+              div.p_subject-view.u_letter-spacing50.u_lineHeight
+                p
+                  | ゆったりともたれて寛げる600サイズ。あると嬉しいちょうど良い450サイズの2種類ご用意しました。やわらかさにこだわったクッションがやさしく包み込んでくれます。
+            div.p_slider
+              div.p_slider-wrapper
+                div.p_slider-contets.t_inner.swiper-container(data-slider="lineup")
+                  div.swiper-wrapper.p_slider-list
+                    //アイボリー
+                    div.swiper-slide.p_slider-list-item
+                      div.p_slider-list-item-imgaes
+                        +img(`${_RESOURCES}assets/images/index/img_slider_b_list_1.jpg`, `IVORY`)
+                      div.p_slider-list-item-view.t_flex
+                        div.p_slider-list-item-view-header
+                          div.p_slider-list-item-view-header-title
+                            p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 IVORY
+                            p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 アイボリー
+                          div.p_slider-list-item-view-header-thumbnail
+                            +img(`${_RESOURCES}assets/images/index/img_slider_b_thumbnail_1.jpg`, `IVORY`)
+                        div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                          p
+                            | すこし⻩みがかった品のある⾊合い。
+                            br
+                            | 他の家具と調和しつつ、象⽛のような⾼級感を感じさせやさしい雰囲気に。
+
+
+                    //ライトグレー
+                    div.swiper-slide.p_slider-list-item
+                      div.p_slider-list-item-imgaes
+                        +img(`${_RESOURCES}assets/images/index/img_slider_b_list_2.jpg`, `Light GRAY`)
+                      div.p_slider-list-item-view.t_flex
+                        div.p_slider-list-item-view-header
+                          div.p_slider-list-item-view-header-title
+                            p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 Light GRAY
+                            p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ライトグレー
+                          div.p_slider-list-item-view-header-thumbnail
+                            +img(`${_RESOURCES}assets/images/index/img_slider_b_thumbnail_1.jpg`, `Light GRAY`)
+                        div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                          p
+                            | あらゆる空間によくなじむ色合い。
+                            br
+                            | 他のカラーとも合わせやすいのでベースカラーとしてのチョイスもアリ
+
+
+                    //ライトグリーン
+                    div.swiper-slide.p_slider-list-item
+                      div.p_slider-list-item-imgaes
+                        +img(`${_RESOURCES}assets/images/index/img_slider_b_list_3.jpg`, `Light GREEN`)
+                      div.p_slider-list-item-view.t_flex
+                        div.p_slider-list-item-view-header
+                          div.p_slider-list-item-view-header-title
+                            p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 Light GREEN
+                            p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ライトグリーン
+                          div.p_slider-list-item-view-header-thumbnail
+                            +img(`${_RESOURCES}assets/images/index/img_slider_b_thumbnail_3.jpg`, `Light GREEN`)
+                        div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                          p
+                            | 鮮やかで明るく、上品な色合い。
+                            br
+                            | かわいらしく、華やかにかつ上品にお部屋に彩りたい方向け。
+
+
+                    //アクアブルー
+                    div.swiper-slide.p_slider-list-item
+                      div.p_slider-list-item-imgaes
+                        +img(`${_RESOURCES}assets/images/index/img_slider_b_list_4.jpg`, `AQUA BLUE`)
+                      div.p_slider-list-item-view.t_flex
+                        div.p_slider-list-item-view-header
+                          div.p_slider-list-item-view-header-title
+                            p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 AQUA BLUE
+                            p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 アクアブルー
+                          div.p_slider-list-item-view-header-thumbnail
+                            +img(`${_RESOURCES}assets/images/index/img_slider_b_thumbnail_4.jpg`, `AQUA BLUE`)
+                        div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                          p
+                            | 光沢と気品ある色合い。
+                            br
+                            | 南国の海を思わせる緑がかった青はさわやかで清潔感のある空間を演出。
+
+
+                    //シャインブルー
+                    div.swiper-slide.p_slider-list-item
+                      div.p_slider-list-item-imgaes
+                        +img(`${_RESOURCES}assets/images/index/img_slider_b_list_5.jpg`, `SHINE BLUE`)
+                      div.p_slider-list-item-view.t_flex
+                        div.p_slider-list-item-view-header
+                          div.p_slider-list-item-view-header-title
+                            p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight400 SHINE BLUE
+                            p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 シャインブルー
+                          div.p_slider-list-item-view-header-thumbnail
+                            +img(`${_RESOURCES}assets/images/index/img_slider_b_thumbnail_5.jpg`, `AQUA BLUE`)
+                        div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
+                          p
+                            | さわやかで大人っぽい色合い。
+                            br
+                            | 無難な色だと物足りない方、ほどよく部屋に彩りを添えたい方にオススメ。
+
+
+            div.p_spec
+              div.t_wrapper.p_spec-wrapper.t_inner
+                p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
+                ul.p_spec-item
+                  li.p_spec-item-list
+                    dl.t_flex
+                      dt.u_letter-spacing50.u_weight400 Cushion 600
+                      dd.u_letter-spacing50 W600×D600×H180
+                  li.p_spec-item-list
+                    dl.t_flex
+                      dt.u_letter-spacing50.u_weight400 Cushion 450
+                      dd.u_letter-spacing50 W450×D450×H140
+      a.p_otherItem(href="#Shop")
+        span.p_otherItem-icon.t_flex
+          i.icon-arrow_dawn
+        span.p_otherItem-text.u_letter-spacing50 他のアイテムを見る
+    div.indexSupport#Support
+      div.t_wrapper
+        h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
+          span.p_title-name.p_title-name__large.u_weight400 Support
+          span.p_title-number.u_weight100 To Customers
+        h3.p_headline.u_weight400.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
+          span SWAYLAYソファを購⼊された⽅へ
+        ul.p_gui.t_flex(data-tab-target="support")
+          li.p_gui-list.__isActive
+            button(type="button").u_letter-spacing50.u_weight400
+              span 取り扱い上の注意
+          li.p_gui-list
+            button(type="button").u_letter-spacing50.u_weight400
+              span お⼿⼊れのしかた
+        div.p_swichi.indexSupport_contets(data-tab-contents="support")
+          div.p_swichi-list
+            div.indexSupport_text.u_lineHeight
+              p
+                | ◎本製品は ⽇本国内において設計、家庭⽤に規格された商品です。ご使⽤する際はお取り扱いに⼗分ご注意ください。業務⽤などでの使⽤については予め使⽤⽬的、条件などをご確認の上ご使⽤ください。
+                br
+                | ◎直射⽇光やストーブやエアコンなど電化製品の近くや⾼温・多湿の場所でのご使⽤は避けてください。⽕災や製品の変⾊・変形・破損等の原因になります。
+                br
+                | ◎湿度の⾼い場所や濡れた状態でのご使⽤は、カビ、におい等の発⽣の原因になります。⾵通しをよくしてご使⽤ください。
+                br
+                | ◎座⾯の上に⽴ったり、背もたれに乗ったり不安定な姿勢で使⽤しないでください。踏み台の代わりとして使⽤すると、⼤変危険です。転倒しケガや破損の恐れがあります。
+                br
+                | ◎移動の際は押したり引いたり引きずることで床に傷がついたり、脚部等が破損するおそれがあります。周りの安全を確認の上、本製品を必ず持ちあげて移動してください。
+                br
+                | ◎床⾯に対する保護はお客様の管理責任としてください。
+                br
+                | ◎本製品は平らな場所でご使⽤ください。傾斜、凹凸のある場所での使⽤は転倒しケガや破損の原因になります。
+                br
+                | ◎本製品はホルムアルデヒド等級の最上位規格を表す表⽰F☆☆☆☆基準にそってつくられていますが、 開梱後はしばらくの間梱包材に含まれる匂いなどが残っている場合がございます。換気をし、⾵通しの良い場所でご使⽤ください。
+                br
+                | ◎本製品の改造や不当な修理は絶対に⾏わないでください。
+
+          div.p_swichi-list
+            div.indexSupport_text.u_lineHeight
+              p
+                | ◎本製品のお⼿⼊れは、定期的に付着した埃などを取り払います。著しい汚れが付着した場合は、柔らかい布に中性洗剤を薄めた⽔を浸し、汚れを拭き取ったあと、乾いた布で拭き、⼗分に乾燥させてからご使⽤ください。濡れたまま使⽤するとカビの発⽣や、変形、変⾊等の原因になります。
+                br
+                | ◎本製品はカバーリング仕⽴てになっています。⽣活のスタイルに合わせて⽣地をご変更いただくことや、経年の変化に対し⽣地をご変更いただくことで⻑くご使⽤いただくこともできます。
+
+
+    div.indexConversion.u_anime-fadeUp(data-anime="addClass")
+      div.t_wrapper
+        p.indexConversion_logo
+          +img(`${_RESOURCES}assets/images/components/header/logo.svg`, `swayley`)
+        p.indexConversion_text.u_letter-spacing150.u_weight400
+          |お問い合わせは
+          br.u_md
+          |ご購⼊された店舗へお願いします。
+
+
+  include /components/include/_movie
+  include /components/include/_footer

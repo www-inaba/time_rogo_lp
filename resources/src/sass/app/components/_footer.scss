@@ -1,0 +1,68 @@
+.c {
+  &_footer {
+    background: var(--main-color);
+    color: white;
+    padding: 90px 0 40px 0;
+    @include mq(m){
+      padding: 50px 0;
+    }
+    &-body {
+      @include mq(m){
+        display: block;
+      }
+    }
+    &-logo {
+      width: 185px;
+      margin-right: auto;
+      @include mq(m){
+        margin: 0 auto 25px auto;
+        width: 88px;
+      }
+    }
+    &-contents {
+      width: 225px;
+      border-left: 1px solid white;
+      padding: 0 0 0 40px;
+      @include mq(m){
+        width: 100%;
+        border-left: none;
+        padding: 0;
+      }
+      &-title {
+        margin-bottom: 40px;
+        @include mq(m){
+          border-bottom: 1px solid white;
+          padding: 0 0 15px 0;
+        }
+      }
+      &-item {
+        &-list {
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            align-items: center;
+            i {
+              display: block;
+              font-size: 20px;
+              margin: 0 12px 0 0;
+            }
+            span {
+              display: block;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    &-body {
+      margin-bottom: 90px;
+    }
+    &-copy {
+      display: block;
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.u{
+  &_anime{
+    &-fadeUp {
+      transform: translate3d(0, 40px, 0);
+      opacity: 0;
+      transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    &-fadeUp.u_anime-start{
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    &-fadeLeft {
+      transform: translate3d(40px, 0, 0);
+      opacity: 0;
+      transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    &-fadeLeft.u_anime-start{
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    &-fadeRight {
+      transform: translate3d(-40px, 0, 0);
+      opacity: 0;
+      transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    &-fadeRight.u_anime-start{
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    &-up {
+      transform: translate3d(0, 120%, 0);
+      transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    &-up.u_anime-start{
+      transform: translate3d(0, 0, 0);
+    }
+    &-up-Small {
+      transform: translate3d(0, 20%, 0);
+      transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    &-up-Small.u_anime-start{
+      transform: translate(0, 0);
+    }
+    &-slideUp{
+      transform: translate3d(0, 40px, 0);
+      transition: all .6s cubic-bezier(0.55, 0.05, 0.22, 0.99);
+    }
+    &-slideUp.u_anime-start{
+      transform: translate3d(0, 0, 0);
+    }
+    &-fade{
+      opacity:0;
+      transition: all 1.6s cubic-bezier(0.55, 0.05, 0.22, 0.99);
+    }
+    &-fade.u_anime-start{
+      opacity: 1;
+    }
+    &-imagesUp {
+      position: relative;
+      overflow: hidden;
+      img {
+        transform: scale(1.18);
+        transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      &.__white {
+        &:after {
+          background: white;
+        }
+      }
+      &:after {
+        transform: translate3d(0, 0, 0);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        content: "";
+        display: block;
+        z-index: 7;
+        top: 0;
+        left: 0;
+        background: var(--SubLine-color);
+        transition: all 1.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      &.u_anime-start {
+        img {
+          transform: scale(1);
+        }
+        &:after {
+          transform: translate3d(0, -100%, 0);
+        }
+      }
+    }
+  }
+}

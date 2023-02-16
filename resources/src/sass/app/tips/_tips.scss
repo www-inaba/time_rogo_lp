@@ -1,0 +1,17 @@
+@use "sass:math";
+
+.t_wrapper {
+  margin: 0 auto;
+  width: 1040px;
+  @include mq(m){
+    width: 84%;
+  }
+}
+
+.t_inner {
+  width: 500px;
+  margin: 0 auto;
+  @include mq(m){
+    width: 84%;
+  }
+}

@@ -1,0 +1,46 @@
+-
+  const _META = {
+    title: "タイトル",
+    keywords: "",
+    description: "ディスクリピション",
+    url: "",
+    type: "website",
+    image: "",
+    siteName: ""
+  }
+
+mixin meta(options)
+  -
+    const base = Object.assign({}, _META, options);
+
+    const meta = {
+      title: base.title,
+      keywords: base.keywords,
+      description: base.description,
+
+      "og:type" : base.type,
+      "og:description" : base.description,
+      "og:title" : base.title,
+      "og:url" : base.url,
+      "og:siteName" : base.siteName,
+      "og:image" : base.image,
+
+      "twitter:cart" : 'summary',
+      "twitter:description" : base.description,
+      "twitter:title" : base.title,
+      "twitter:url" : base.url,
+      "twitter:image" : base.image,
+      "twitter:domain" : base.domain,
+      "twitter:image::width" : 1200,
+      "twitter:image::height" : 630,
+      "twitter:creator" : "",
+      "twitter:site" : "",
+    }
+
+  each val, key in meta
+    if( key === "title" )
+      title #{val}
+    else if( key.match(/^og:/) )
+      meta( property = key content = val)
+    else
+      meta( name = key content = val)

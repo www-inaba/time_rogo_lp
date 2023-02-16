@@ -1,0 +1,39 @@
+$font: (
+  size: (
+    pc: 14px,
+    // spはvwに変換される
+    sp: 28px,
+  ),
+  color: (
+    text: #464645,
+    a: #464645,
+  ),
+  family: (
+    default: (
+      "YakuHanJP",
+      "Noto Sans JP",
+      sans-serif,
+    ),
+    Roboto: (
+      'Roboto', sans-serif,
+    ),
+  ),
+);
+
+$breakpoints: (
+  xxl: 1440px,
+  xl: 1280px,
+  l: 1024px,
+  m: 768px,
+  s: 414px,
+);
+
+//.t_txtのline-height
+$lineHeight: 2;
+
+// ここまで必須、以下自由定義
+
+$color: (
+  main: #7CC9DB,
+  bg: #F2F2F0,
+);

@@ -1,0 +1,166 @@
+// とあるmedia queryの区間のフォントサイズをvwで動かす
+//  .test{
+//    font-size: 40px;
+//  }
+//  @media only screen and (max-width:1280px){
+//    .test{
+//      @include fs-smooth(40, 20, 1280, 828);
+//    }
+//  }
+//  @media only screen and (max-width:828px){
+//    .test{
+//      font-size: 20px;
+//    }
+//  }
+//    @include mq(xxl){
+//      bottom: get_vw(6px, xxl);
+//      margin: get_vw_4(0px,40px,0px,0px, xxl);
+//      width:calc(100% - #{get_vw(320px, xxl)} ) ;
+//    }
+@mixin fs-smooth($l_fs, $s_fs, $l_bp, $s_bp) {
+  $x: $l_fs + px;
+  $y: "1vw - " + $l_bp / 100 + px;
+  $z: ($l_fs - $s_fs) / ($l_bp / 100 - $s_bp / 100);
+  font-size: calc(#{$x} + ((#{$y}) * #{$z}));
+}
+@mixin txt {
+  line-height: $lineHeight;
+}
+@mixin objectfit {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+// media query
+@mixin mq($bp) {
+  @if map-has-key($breakpoints, $bp) {
+    @media screen and (max-width: #{map-get($breakpoints, $bp)}) {
+      @content;
+    }
+  } @else {
+    // 定義にない場合は、引数のpxで直接指定
+    @media screen and (max-width: $bp) {
+      @content;
+    }
+  }
+}
+
+// 指定したプロパティを自動でpx,vwにしてmediqqueryを生成する
+@mixin responsive-property(
+  $prop,
+  $bp,
+  $val,
+  $bp2: null,
+  $val2: null,
+  $bp3: null,
+  $val3: null
+) {
+  #{$prop}: $val;
+
+  @include mq(#{$bp}) {
+    #{$prop}: get_vw($val, $bp);
+  }
+
+  @if ($bp2 and $val2) {
+    @include mq(#{$bp2}) {
+      #{$prop}: get_vw($val2, $bp2);
+    }
+  }
+
+  @if ($bp3 and $val3) {
+    @include mq(#{$bp3}) {
+      #{$prop}: $val3;
+    }
+  }
+}
+
+// web-font
+@mixin font-family($key: web) {
+  @if map-has-key(map-get($font, family), $key) {
+    font-family: #{map-get(map-get($font, family), $key)};
+  } @else {
+    @error "_variables.scssのfont-familyに#{$key}を設定してください";
+  }
+}
+
+// ラッパー
+@mixin responsive-font-size($val, $val2: null, $val3: null) {
+  @include responsive-property(font-size, l, $val, m, $val2, s, $val3);
+}
+@mixin responsive-padding-top($val, $val2: null, $val3: null) {
+  @include responsive-property(padding-top, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-padding-bottom($val, $val2: null, $val3: null) {
+  @include responsive-property(padding-bottom, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-padding-right($val, $val2: null, $val3: null) {
+  @include responsive-property(padding-right, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-padding-left($val, $val2: null, $val3: null) {
+  @include responsive-property(padding-left, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-margin-top($val, $val2: null, $val3: null) {
+  @include responsive-property(margin-top, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-margin-bottom($val, $val2: null, $val3: null) {
+  @include responsive-property(margin-bottom, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-margin-right($val, $val2: null, $val3: null) {
+  @include responsive-property(margin-right, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-margin-left($val, $val2: null, $val3: null) {
+  @include responsive-property(margin-left, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-width($val, $val2: null, $val3: null) {
+  @include responsive-property(width, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-height($val, $val2: null, $val3: null) {
+  @include responsive-property(height, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-top($val, $val2: null, $val3: null) {
+  @include responsive-property(top, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-bottom($val, $val2: null, $val3: null) {
+  @include responsive-property(bottom, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-right($val, $val2: null, $val3: null) {
+  @include responsive-property(right, xl, $val, m, $val2, s, $val3);
+}
+@mixin responsive-left($val, $val2: null, $val3: null) {
+  @include responsive-property(left, xl, $val, m, $val2, s, $val3);
+}
+
+@mixin xxl {
+  @include mq(xxl) {
+    @content;
+  }
+}
+@mixin xl {
+  @include mq(xl) {
+    @content;
+  }
+}
+@mixin lg {
+  @include mq(lg) {
+    @content;
+  }
+}
+@mixin md {
+  @include mq(md) {
+    @content;
+  }
+}
+@mixin sm {
+  @include mq(sm) {
+    @content;
+  }
+}

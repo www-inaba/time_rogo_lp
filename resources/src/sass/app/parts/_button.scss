@@ -1,0 +1,52 @@
+.p_button {
+  background: white;
+  width: 258px;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  transition: 0.5s all var(--transition);
+  &:hover {
+    background: black;
+    color: white;
+  }
+  &__right {
+    margin-left: auto;
+  }
+  &__large {
+    padding: 30px;
+    font-size: 18px;
+  }
+  &__red {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+    &:hover {
+      background: white;
+      color: var(--main-color);
+    }
+  }
+  &__black {
+    background: black;
+    border-color: black;
+    color: white;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+  span {
+    display: block;
+  }
+  i {
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-size: 10px;
+    top: 50%;
+    transform: scale(0.5) translateY(-50%) translateX(0);
+  }
+}
