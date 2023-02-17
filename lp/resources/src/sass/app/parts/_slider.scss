@@ -1,12 +1,12 @@
 .p_slider {
   overflow: hidden;
   &-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
   &-contets {
   }
   &-list {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     &-item {
       transform: scale(0.7);
       transition: 0.5s all var(--transition);
