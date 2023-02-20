@@ -37,7 +37,7 @@ block content
       div.indexSwayley_scroll.t_flex
         p.indexSwayley_scroll-text.u_weight500.u_letter-spacing50.t_Roboto Scroll Down
         span.indexSwayley_scroll-line
-    div.indexStory#Story
+    div.indexStory#Concept
       div.p_background.t_wrapper.indexStory_wrapper
         div.p_background-wrapper
           h2.indexStory_title.t_RobotoSlab.u_letter-spacing100.u_weight100.u_anime-fadeUp(data-anime="addClass") Concept
@@ -111,7 +111,7 @@ block content
           div.indexSlider_gallery-list.swiper-slide
             +img(`${_RESOURCES}assets/images/index/img_slider_5.jpg`, `time`)
 
-    div.p_lineup
+    div.p_lineup#Products
       div.t_wrapper
         h2.p_title.t_flex.u_letter-spacing50.p_title__top.u_anime-fadeUp(data-anime="addClass")
           span.p_title-name.p_title-name__large.u_weight500.t_RobotoSlab Products
@@ -747,7 +747,7 @@ block content
       li.p_gallery-list
         +img(`${_RESOURCES}assets/images/index/img_gallery_a_list_2.jpg`, `time`)
 
-    div.indexInnovation
+    div.indexInnovation#Functions
       div.t_wrapper
         h2.p_title.t_flex.p_title__top.u_anime-fadeUp(data-anime="addClass")
           span.p_title-name.p_title-name__large.u_weight400.t_RobotoSlab.u_letter-spacing100 Functions
@@ -768,9 +768,6 @@ block content
             button(type="button") 生地のこだわり
           li.p_tabs-list
             button(type="button") 国内製の品質
-
-
-
 
 
         div.p_swichi(data-tab-contents="innovation")
@@ -800,154 +797,175 @@ block content
                     dd.u_lineHeight.u_weight500
                       | ご自宅でも、オフィスでも。様々なインテリアや空間に馴染む親和性。ハイセンスなおもてなしの空間を、シンプルなシルエットで品よく演出します。
 
+
           div.p_swichi-list
             section.p_innovation.t_flex
               div.p_innovation-header.t_flex
-                div.p_innovation-header-name.u_anime-fadeUp(data-anime="addClass")
-                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                div.p_innovation-header-name
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight500 Functions
                   span.p_innovation-header-name-number.t_Roboto 2
-                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
-                  | 『ちょっと持ってみて』と
-                  br.u_md
-                  | 促したくなる、驚くほどの軽さ
+                h2.u_weight600.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  | 材質にも環境配慮にも、できる限りのこだわりを。
               div.p_innovation-contents
-                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                div.p_innovation-contents-images
                   figure
-                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_2.jpg`, `『ちょっと持ってみて』と促したくなる、驚くほどの軽さ`)
-                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_2.jpg`, `材質にも環境配慮にも、できる限りのこだわりを。`)
+                div.p_definition
                   dl
-                    dt.t_flex
-                      i.icon-arrow_right
-                      p.u_weight400.u_letter-spacing150
-                        | 強化段ボールを使用したフレームで軽くて丈夫
-                    dd.u_lineHeight
-                      | Swayleyソファは、昨年開催された東京オリンピックでも話題となった強化ダンボールをフレームとして使っています。強化ダンボールの特長は、何よりもその強度と軽さです。従来の木材にまったく劣らない強度をもちながら、とても軽量なため女性やお子さまでもカンタンに持ち運びが可能です。面倒だったソファの下のお掃除も、気分しだいの模様替えも、Swayleyソファなら自由自在。木材やバネを使ったソファと違い、きしみ音がほとんど起こらないのも強化ダンボールのメリットです。
+                    dt
+                      p.u_weight600.u_letter-spacing150
+                        | 北海道の銘木、ミズナラの木材を使用。
+                    dd.u_lineHeight.u_weight500
+                      div
+                        |TIMEの木製のアイテムや部材は、環境への配慮を考え、北海道産の択伐（自然保護のために計画的に伐採）されたミズナラの木を使用しています。ミズナラの木は、希少価値が高く、ウイスキーなどの樽材にも使われ、寒くて水気の多いところに生育する木材で、1/fゆらぎの木目※1、トラフ※2が特徴です。古くからもミズナラ素材の価値は高く、人気の高い木材は、さまざまなインテリア空間に合わせやすいのが特徴です。最近ではウッドショックの世界情勢も重なり、国内の資材においても入手困難になってきています。世界的にはオークの呼び名で木材の王様とも言われ、最高級の家具にも使われる木材です。
+
+                      small.u_letter-spacing50
+                        | ※1：1/fゆらぎの木目とは、自然界が創り出す波長。人間にとって心地よいとされる波長は木の木目に現れています。
+                        br
+                        | ※2：トラフとは、木目の中に虎の毛のように見える希少価値の高いところを指します。
 
           div.p_swichi-list
             section.p_innovation.t_flex
               div.p_innovation-header.t_flex
-                div.p_innovation-header-name.u_anime-fadeUp(data-anime="addClass")
-                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                div.p_innovation-header-name
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight500 Functions
                   span.p_innovation-header-name-number.t_Roboto 3
-                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
-                  | 『居心地いいでしょ』と
-                  br.u_md
-                  | 言いたくなる、高い質感・デザイン
+                h2.u_weight600.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  | メイドイン 瀬戸内。香川の家具職人がつくる木製のアイテム。
               div.p_innovation-contents
-                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                div.p_innovation-contents-images
                   figure
-                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_3.jpg`, `『居心地いいでしょ』と言いたくなる、高い質感・デザイン`)
-                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_3.jpg`, `メイドイン 瀬戸内。香川の家具職人がつくる木製のアイテム。`)
+                div.p_definition
                   dl
-                    dt.t_flex
-                      i.icon-arrow_right
-                      p.u_weight400.u_letter-spacing150
-                        | 空間づくりが自在に楽しめる上質なデザイン
-                    dd.u_lineHeight
-                      | Swayleyソファは、レイアウトを自在にお楽しみいただくために、組み合わせ自由なモジュール型を採用しました。軽く持ち運びもしやすいので、その日の気分や空間の雰囲気に合わせて模様替えを手軽にお楽しみいただけます。シンプルかつ高級感のあるデザインを実現し、生地には心地よい手ざわりと見た目のエレガントさを両立した「アクアクリーン®︎」を採用。カラーは５色からお選びいただけます。ソファは使い捨てるものではなく、長くお使いいただくもの。だからこそ、くつろぎの時間を彩るアイテムとしての、日々の使い勝手を追求したい。
+                    dt
+                      p.u_weight600.u_letter-spacing150
+                        | 昭和元年創業。香川県高松市の家具工場で生産。
+                    dd.u_lineHeight.u_weight500
+                      |木製アイテムは瀬戸内海に面した四国、高松の小規模な工場でつくられます。家具の製造一筋に行ってきた工場は昭和元年に生まれ、100年近くの間技術を伝承、特にコタツを中心につくられてきました。最近ではウッドショック、環境に対する配慮、世界情勢の流れもあり、海外に流れていた家具の生産が国内に戻ってきました。高松の工場には、職人が日夜家具をつくり続け、お客様のもとへ喜んでいただける製品を届けたいと考えています。TIMEに込められた職人の想いが皆様に届けば幸いです。
 
           div.p_swichi-list
             section.p_innovation.t_flex
               div.p_innovation-header.t_flex
                 div.p_innovation-header-name
-                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight500 Functions
                   span.p_innovation-header-name-number.t_Roboto 4
-                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
-                  | 『これは魔法？』と
-                  br.u_md
-                  | 驚くほど イージーケアな生地
+                h2.u_weight600.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  |高品質ウレタンを使用した、時を忘れる座り心地。
               div.p_innovation-contents
-                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                div.p_innovation-contents-images
                   figure
-                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_4.jpg`, `『これは魔法？』と驚くほど イージーケアな生地`)
-                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_4.jpg`, `高品質ウレタンを使用した、時を忘れる座り心地。`)
+                div.p_definition
                   dl
-                    dt.t_flex
-                      i.icon-arrow_right
-                      p.u_weight400.u_letter-spacing150
-                        | きめ細やかな手触りとエレガントな質感「アクアクリーン®」
-                    dd.u_lineHeight
-                      | Swayleyソファは、ちょっとした汚れなら水拭きだけでキレイに落とせる生地、「アクアクリーン®」を採用。水拭きで落ちない汚れがついても、ソファのカバーリングはカンタンに着脱可能。取り外してご自宅でお洗濯できます。小さなお子さまがいらっしゃるご家庭や、大人数で集まって楽しむ空間でも、気兼ねなくお使いいただきたい。この想いから、高級感だけでなくお手入れのカンタンさも兼ね備えた、選りすぐりの生地を採用しました。「水拭きだけで、魔法みたいに汚れが落ちる」「さらに、ご自宅でも手軽にお洗濯できる」この驚きのイージーケア素材の性能を、ぜひその目でお確かめください。
-                a.p_innovation-button.t_flex(target="_blank") 「アクアクリーン®」のメーカーサイトはコチラから
+                    dt
+                      p.u_weight600.u_letter-spacing150
+                        | 最上級のウレタンで実現。理想の座り心地が続くロングライフ。
+                    dd.u_lineHeight.u_weight500
+                      | TIMEのソファの上質な座り心地と、長い間ヘタらないロングライフのソファを実現しているのは、創業から長きにわたりクッション資材を製造・販売。有名家具ブランドや有名リゾートホテルにも製品を提供しつづけている、三重県のウレタン加工工場でつくられている高品質ウレタンです。ソファの座り心地やカラダにかかる負荷は、ウレタンの品質によって左右されます。TIMEのソファには、耐久性・体圧分散性に優れた高級ソファにも使われる最上級品質のウレタンを使用し、ふっくらと心地よくもしっかりとカラダを支える座り心地を実現しています。
+
           div.p_swichi-list
             section.p_innovation.t_flex
               div.p_innovation-header.t_flex
                 div.p_innovation-header-name
-                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight500 Functions
                   span.p_innovation-header-name-number.t_Roboto 5
-                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150
-                  | 『ヘタりにくいから長く使える』
-                  br.u_md
-                  | いつまでも最高の座り心地
+                h2.u_weight600.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  | サスティナブル生地は、モノを大切にする日本の文化。
               div.p_innovation-contents
-                div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
+                div.p_innovation-contents-images
                   figure
-                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_5.jpg`, `『ヘタりにくいから長く使える』いつまでも最高の座り心地`)
-                div.p_definition.u_anime-fadeUp(data-anime="addClass")
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_5.jpg`, `サスティナブル生地は、モノを大切にする日本の文化。`)
+                div.p_definition
                   dl
-                    dt.t_flex
-                      i.icon-arrow_right
-                      p.u_weight400.u_letter-spacing150
-                        | ヘタりにくくいつまでも最上級の座り心地
-                    dd.u_lineHeight
-                      | Swayleyソファは、ただ座り心地がいいだけのソファではありません。ヘタりにくく、優れた座り心地がいつまでも続きます。ヘタったソファは底部のバネや木材のゴツゴツとした感触が気になり、心地よく座れなくなってしまいます。場合によっては、姿勢やカラダの歪みの原因となり、腰や背中を痛めてしまうおそれもあります。長く、安心して使い続けられるものをつくりたい。Swayleyソファは、ずっと続く最上級の座り心地で、いつまでも心地よい空間をご提供します。
+                    dt
+                      p.u_weight600.u_letter-spacing150
+                        | 環境に配慮したサスティナブル生地、反毛ワタ混リサイクル糸。
+                    dd.u_lineHeight.u_weight500
+                      | TIMEのソファ生地には、環境に配慮した素材『反毛ワタ混リサイクル糸』を使用しています。反毛ワタ混リサイクル糸は、愛知県三河地方で明治時代から続けられてきた技術をルーツとする、再生繊維を活用したリサイクル糸です。 反毛とは未使用のまま破棄される生地や、工場で発生する落ちワタ、はぎれなどを集めてもう一度ワタの状態に戻し、糸の原料を作る技術のことを言います。繊維が貴重だった戦後に発展し、現代も受け継がれている極めて優れたリサイクル産業です。 再生する際にエネルギーが過剰にかからず、廃棄物を減らすことができます。また既存の素材を再利用することで生産に必要な天然資源やエネルギーを節約し、繊維の寿命を延ばすことに繋がります。 モノを大切にする日本の文化とミッドセンチュリーデザインを融合させました。
 
+          div.p_swichi-list
+            section.p_innovation.t_flex
+              div.p_innovation-header.t_flex
+                div.p_innovation-header-name
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight500 Functions
+                  span.p_innovation-header-name-number.t_Roboto 6
+                h2.u_weight600.u_vertical.p_innovation-header-title.u_letter-spacing150
+                  | 国内製にこだわった、日本生まれの高品質家具。
+              div.p_innovation-contents
+                div.p_innovation-contents-images
+                  figure
+                    +img(`${_RESOURCES}assets/images/index/img_innovation_list_6.jpg`, `サスティナブル生地は、モノを大切にする日本の文化。`)
+                div.p_definition
+                  dl
+                    dt
+                      p.u_weight600.u_letter-spacing150
+                        | 日本国内製の信頼の品質。
+                    dd.u_lineHeight.u_weight500
+                      | TIMEの家具を使う皆様のかけがえのない時間を、最もくつろげる良い時間。さらには、皆様の一番好きな時間にしていただけるよう、材料から生産まで、国内製にこだわりました。日本で生まれた材料、部材にこだわり、日本の職人の手で丈夫に、そして丁寧に作り上げました。確かな品質で、長い間劣化が少なく使用していただける、時間を超えた愛着のミッドセンチュリーデザイン家具です。
 
-
-
-    div.indexSupport
+    ul.p_gallery.t_flex
+      li.p_gallery-list
+        +img(`${_RESOURCES}assets/images/index/img_gallery_b_list_1.jpg`, `time`)
+      li.p_gallery-list
+        +img(`${_RESOURCES}assets/images/index/img_gallery_b_list_2.jpg`, `time`)
+    div.indexSupport#Support
       div.t_wrapper
         h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
-          span.p_title-name.p_title-name__large.u_weight400 Support
-          span.p_title-number.u_weight100 To Customers
-        h3.p_headline.u_weight400.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
-          span SWAYLAYソファを購⼊された⽅へ
-        ul.p_gui.t_flex(data-tab-target="support")
+          span.p_title-name.p_title-name__large.u_weight600 Support
+          span.p_title-number.u_weight500 To Customers
+        h3.p_headline.u_weight600.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
+          span TIMEを購⼊された⽅へ
+        ul.p_gui.t_flex.p_gui__left(data-tab-target="support")
           li.p_gui-list.__isActive
-            button(type="button").u_letter-spacing50.u_weight400
+            button(type="button").u_letter-spacing50.u_weight500
               span 取り扱い上の注意
           li.p_gui-list
-            button(type="button").u_letter-spacing50.u_weight400
+            button(type="button").u_letter-spacing50.u_weight500
               span お⼿⼊れのしかた
         div.p_swichi.indexSupport_contets(data-tab-contents="support")
           div.p_swichi-list
             div.indexSupport_text.u_lineHeight
               p
-                | ◎本製品は ⽇本国内において設計、家庭⽤に規格された商品です。ご使⽤する際はお取り扱いに⼗分ご注意ください。業務⽤などでの使⽤については予め使⽤⽬的、条件などをご確認の上ご使⽤ください。
+                | ◎本製品は　家庭用に規格され製造された家具です。ご使用する際はお取り扱いに十分ご注意ください。業務用などでの使用については予め使用目的、条件などをご確認の上ご使用ください。
                 br
-                | ◎直射⽇光やストーブやエアコンなど電化製品の近くや⾼温・多湿の場所でのご使⽤は避けてください。⽕災や製品の変⾊・変形・破損等の原因になります。
+                | ◎湿度の高い場所や濡れた状態でのご使用は、カビ、におい等の発生の原因になります。風通しをよくしてご使用ください。
                 br
-                | ◎湿度の⾼い場所や濡れた状態でのご使⽤は、カビ、におい等の発⽣の原因になります。⾵通しをよくしてご使⽤ください。
+                | ◎本製品は無垢材を使用しています。 天然素材につき、木目や色などのばらつき、節なども含まれます。気温の変化やご使用方法によってはソリやワレが生じる場合もございます。予めご了承ください。
                 br
-                | ◎座⾯の上に⽴ったり、背もたれに乗ったり不安定な姿勢で使⽤しないでください。踏み台の代わりとして使⽤すると、⼤変危険です。転倒しケガや破損の恐れがあります。
+                | ◎天板の上に立ったり、不安定な姿勢で使用しないでください。
                 br
-                | ◎移動の際は押したり引いたり引きずることで床に傷がついたり、脚部等が破損するおそれがあります。周りの安全を確認の上、本製品を必ず持ちあげて移動してください。
+                | ◎踏み台の代わりとして使用すると、大変危険です。転倒しケガや破損の恐れがあります。
                 br
-                | ◎床⾯に対する保護はお客様の管理責任としてください。
+                | ◎移動の際は押したり引いたり引きずることで床に傷がついたり、脚部等が破損するおそれがあります。周りの安全を確認の上、本製品を必ず持ちあげて移動してください。
                 br
-                | ◎本製品は平らな場所でご使⽤ください。傾斜、凹凸のある場所での使⽤は転倒しケガや破損の原因になります。
+                | ◎床面に対する保護はお客様の管理責任としてください。床面への傷等が心配な場合は、フェルトなどを脚部に 取り付けてご使用ください。
                 br
-                | ◎本製品はホルムアルデヒド等級の最上位規格を表す表⽰F☆☆☆☆基準にそってつくられていますが、 開梱後はしばらくの間梱包材に含まれる匂いなどが残っている場合がございます。換気をし、⾵通しの良い場所でご使⽤ください。
+                | ◎本製品は平らな場所でご使用ください。傾斜、凹凸のある場所での使用は転倒しケガや破損の原因になります。
                 br
-                | ◎本製品の改造や不当な修理は絶対に⾏わないでください。
+                | ◎本製品はホルムアルデヒド等級の最上位規格を表す表示F☆☆☆☆基準にそってつくられていますが、開梱後はしばらくの間梱包材に含まれる匂いなどが残っている場合がございます。換気をし、風通しの良い場所でご使用ください。
+                br
+                | ◎接合部にゆるみがないか定期的に確認し、金具などを締め直してください。異常が見られた場合にはご使用を中止してください。
+                br
+                | ◎本製品の改造や不当な修理は絶対に行わないでください。
 
           div.p_swichi-list
             div.indexSupport_text.u_lineHeight
               p
-                | ◎本製品のお⼿⼊れは、定期的に付着した埃などを取り払います。著しい汚れが付着した場合は、柔らかい布に中性洗剤を薄めた⽔を浸し、汚れを拭き取ったあと、乾いた布で拭き、⼗分に乾燥させてからご使⽤ください。濡れたまま使⽤するとカビの発⽣や、変形、変⾊等の原因になります。
-                br
-                | ◎本製品はカバーリング仕⽴てになっています。⽣活のスタイルに合わせて⽣地をご変更いただくことや、経年の変化に対し⽣地をご変更いただくことで⻑くご使⽤いただくこともできます。
+                | ◎本製品のお手入れは、定期的に付着した埃などを取り払います。著しい汚れが付着した場合は、柔らかい布に中性洗剤を薄めた水を浸し、汚れを拭き取ったあと、乾いた布で拭き、十分に乾燥させてからご使用ください。 濡れたまま使用するとカビの発生や、変形、変色等の原因になります。
 
 
     div.indexConversion.u_anime-fadeUp(data-anime="addClass")
       div.t_wrapper
-        p.indexConversion_logo
-          +img(`${_RESOURCES}assets/images/components/header/logo.svg`, `swayley`)
-        p.indexConversion_text.u_letter-spacing150.u_weight400
+        p.indexConversion_text.u_letter-spacing150.u_weight500
           |お問い合わせは
           br.u_md
           |ご購⼊された店舗へお願いします。
-
+    div.indexMvFooter
+      div.indexMvFooter_images
+        +img(`${_RESOURCES}assets/images/index/img_mv_footer.jpg`, `time`)
+      div.t_center.indexMvFooter_logo
+        <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"     viewBox="0 0 90.5 40.7" style="enable-background:new 0 0 90.5 40.7;" xml:space="preserve"><path id="logo_00000119834467001253611890000008476220279490077058_" transform="translate(-228.614 -483.431)" class="st0" d="	M317.6,510.5h-0.2v-1.3h0.4c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0.1,0,0.1,0,0.2c0,0.1,0,0.2-0.1,0.2	c-0.1,0.1-0.1,0.1-0.2,0.1l0.4,0.6h-0.2l-0.3-0.6h-0.2V510.5z M317.6,509.8h0.2c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0	c0.1,0,0.1-0.1,0.1-0.2c0,0,0-0.1,0-0.1c0,0,0,0-0.1-0.1c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0h-0.2L317.6,509.8z M317.9,511.1	c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3l0,0C319.1,510.5,318.6,511.1,317.9,511.1z M317.9,508.8	c-0.6,0-1,0.5-1,1c0,0.6,0.5,1,1,1c0.6,0,1-0.5,1-1c0,0,0,0,0,0C318.9,509.3,318.4,508.8,317.9,508.8L317.9,508.8z M244,487.9h5v5	h-5V487.9z M245.5,523.4v0.7l-0.4,0c-0.3,0-0.6,0-0.9-0.2c-0.1-0.1-0.2-0.3-0.1-0.5v-2.1h-0.5v-0.6h0.5v-1h0.9v1h0.6v0.6h-0.6v1.8	c0,0.1,0,0.2,0.1,0.3c0.1,0,0.2,0.1,0.3,0.1H245.5L245.5,523.4z M247.1,519.4v0.8h-0.9v-0.8H247.1z M247.1,520.6v3.4h-0.9v-3.4	H247.1z M250,521.5c-0.1-0.2-0.3-0.3-0.4-0.2c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.1-0.1,0.3-0.1,0.4v2.1h-0.9v-3.4h0.9v0.5	c0.1-0.1,0.2-0.3,0.3-0.4c0.4-0.3,0.9-0.3,1.3,0c0.1,0.1,0.2,0.2,0.3,0.4c0.1-0.2,0.3-0.3,0.4-0.4c0.2-0.1,0.4-0.1,0.6-0.1	c0.2,0,0.3,0,0.4,0.1c0.3,0.1,0.5,0.4,0.6,0.7c0,0.2,0,0.3,0,0.5l0,2.1H252v-2.2c0-0.1,0-0.2-0.1-0.3c-0.1-0.2-0.3-0.3-0.4-0.2	c-0.2,0-0.4,0.1-0.5,0.3c-0.1,0.1-0.1,0.3-0.1,0.4v2h-0.9v-2C250.1,521.8,250.1,521.7,250,521.5z M256.8,523c0,0.2-0.1,0.4-0.3,0.6	c-0.3,0.3-0.8,0.5-1.2,0.5c-0.4,0-0.8-0.1-1.1-0.4c-0.4-0.4-0.5-0.9-0.5-1.4c0-0.5,0.1-1,0.4-1.4c0.3-0.3,0.7-0.5,1.2-0.5	c0.3,0,0.5,0.1,0.8,0.2c0.2,0.1,0.4,0.3,0.6,0.5c0.1,0.2,0.2,0.5,0.3,0.7c0,0.2,0,0.5,0,0.7h-2.3c0,0.3,0.1,0.5,0.3,0.7	c0.1,0.1,0.3,0.1,0.4,0.1c0.2,0,0.3,0,0.4-0.2c0.1-0.1,0.1-0.1,0.2-0.2L256.8,523z M255.9,522c0-0.2-0.1-0.4-0.2-0.5	c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.2-0.2,0.3-0.2,0.5H255.9z M257.6,519.4h0.9v4.6h-0.9V519.4z M262.4,523	c0,0.2-0.1,0.4-0.3,0.6c-0.3,0.3-0.8,0.5-1.2,0.5c-0.4,0-0.8-0.1-1.1-0.4c-0.4-0.4-0.5-0.9-0.5-1.4c0-0.5,0.1-1,0.4-1.4	c0.3-0.3,0.7-0.5,1.2-0.5c0.3,0,0.5,0.1,0.8,0.2c0.2,0.1,0.4,0.3,0.6,0.5c0.1,0.2,0.2,0.5,0.3,0.7c0,0.2,0,0.5,0,0.7h-2.3	c0,0.3,0.1,0.5,0.3,0.7c0.1,0.1,0.3,0.1,0.4,0.1c0.2,0,0.3,0,0.4-0.2c0.1-0.1,0.1-0.1,0.2-0.2L262.4,523z M261.5,522	c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.1-0.2,0.3-0.2,0.5H261.5z M265.6,520.7	c0.3,0.2,0.5,0.5,0.5,0.9h-0.9c0-0.1,0-0.2-0.1-0.3c-0.1-0.1-0.3-0.2-0.5-0.2c-0.1,0-0.3,0-0.4,0.1c-0.1,0-0.1,0.1-0.1,0.2	c0,0.1,0,0.2,0.1,0.2c0.3,0.1,0.6,0.2,0.9,0.2c0.3,0.1,0.6,0.2,0.8,0.4c0.2,0.2,0.3,0.4,0.3,0.6c0,0.3-0.1,0.6-0.4,0.8	c-0.7,0.4-1.6,0.4-2.4,0c-0.3-0.2-0.4-0.5-0.4-0.9h0.9c0,0.1,0,0.2,0.1,0.3c0.2,0.1,0.4,0.2,0.6,0.2c0.1,0,0.3,0,0.4-0.1	c0.1,0,0.2-0.1,0.2-0.2c0-0.1,0-0.2-0.1-0.2c-0.3-0.1-0.6-0.2-0.9-0.3c-0.3-0.1-0.6-0.2-0.8-0.4c-0.2-0.2-0.3-0.4-0.2-0.6	c0-0.3,0.1-0.6,0.4-0.8c0.3-0.2,0.7-0.4,1-0.3C264.9,520.5,265.2,520.6,265.6,520.7z M269.2,520.7c0.3,0.2,0.5,0.5,0.5,0.9h-0.9	c0-0.1,0-0.2-0.1-0.3c-0.1-0.1-0.3-0.2-0.5-0.2c-0.1,0-0.3,0-0.4,0.1c-0.1,0-0.1,0.1-0.1,0.2c0,0.1,0,0.2,0.1,0.2	c0.3,0.1,0.6,0.2,0.9,0.2c0.3,0.1,0.6,0.2,0.8,0.4c0.2,0.2,0.3,0.4,0.3,0.6c0,0.3-0.1,0.6-0.4,0.8c-0.7,0.4-1.6,0.4-2.4,0	c-0.3-0.2-0.4-0.5-0.4-0.9h0.9c0,0.1,0,0.2,0.1,0.3c0.2,0.1,0.4,0.2,0.6,0.2c0.1,0,0.3,0,0.4-0.1c0.1,0,0.2-0.1,0.2-0.2	c0-0.1,0-0.2-0.1-0.2c-0.3-0.1-0.6-0.2-0.9-0.3c-0.3-0.1-0.6-0.2-0.8-0.4c-0.2-0.2-0.3-0.4-0.2-0.6c0-0.3,0.1-0.6,0.4-0.8	c0.3-0.2,0.7-0.4,1-0.3C268.6,520.5,268.9,520.6,269.2,520.7z M274.4,521.5c-0.1-0.2-0.3-0.3-0.4-0.2c-0.2,0-0.4,0.1-0.5,0.2	c-0.1,0.1-0.1,0.3-0.1,0.4v2.1h-0.9v-3.4h0.9v0.5c0.1-0.1,0.2-0.3,0.3-0.4c0.4-0.3,0.9-0.3,1.3,0c0.1,0.1,0.2,0.2,0.3,0.4	c0.1-0.2,0.3-0.3,0.4-0.4c0.2-0.1,0.4-0.1,0.6-0.1c0.2,0,0.3,0,0.4,0.1c0.3,0.1,0.5,0.4,0.6,0.7c0,0.2,0,0.3,0,0.5l0,2.1h-0.9v-2.2	c0-0.1,0-0.2-0.1-0.3c-0.1-0.2-0.3-0.3-0.4-0.2c-0.2,0-0.4,0.1-0.5,0.3c-0.1,0.1-0.1,0.3-0.1,0.4v2h-0.9v-2	C274.5,521.8,274.5,521.7,274.4,521.5z M281.2,521c0.6,0.8,0.6,1.8,0,2.6c-0.7,0.7-1.9,0.7-2.6,0c-0.6-0.8-0.6-1.8,0-2.6	C279.3,520.3,280.4,520.3,281.2,521z M279.8,521.2c-0.2,0-0.5,0.1-0.6,0.3c-0.3,0.5-0.3,1.1,0,1.6c0.3,0.3,0.8,0.4,1.1,0.1	c0,0,0.1-0.1,0.1-0.1c0.3-0.5,0.3-1.1,0-1.6C280.3,521.3,280.1,521.2,279.8,521.2L279.8,521.2z M284.3,521.5	c-0.1-0.2-0.3-0.3-0.4-0.2c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.1-0.1,0.3-0.1,0.4v2.1h-0.9v-3.4h0.9v0.5c0.1-0.1,0.2-0.3,0.3-0.4	c0.4-0.3,0.9-0.3,1.3,0c0.1,0.1,0.2,0.2,0.3,0.4c0.1-0.2,0.3-0.3,0.4-0.4c0.2-0.1,0.4-0.1,0.6-0.1c0.2,0,0.3,0,0.4,0.1	c0.2,0.1,0.3,0.2,0.4,0.3c0.1,0.1,0.2,0.3,0.2,0.4c0,0.2,0,0.3,0,0.5l0,2.1h-0.9v-2.2c0-0.1,0-0.2-0.1-0.3c-0.1-0.2-0.3-0.3-0.4-0.2	c-0.2,0-0.4,0.1-0.5,0.3c-0.1,0.1-0.1,0.3-0.1,0.4v2h-0.9v-2C284.3,521.8,284.3,521.7,284.3,521.5z M291.1,523	c0,0.2-0.1,0.4-0.3,0.6c-0.3,0.3-0.8,0.5-1.2,0.5c-0.4,0-0.8-0.1-1.1-0.4c-0.4-0.4-0.5-0.9-0.5-1.4c0-0.5,0.1-1,0.4-1.4	c0.3-0.3,0.7-0.5,1.2-0.5c0.3,0,0.5,0.1,0.8,0.2c0.2,0.1,0.4,0.3,0.6,0.5c0.1,0.2,0.2,0.5,0.3,0.7c0,0.2,0,0.5,0,0.7h-2.3	c0,0.3,0.1,0.5,0.3,0.7c0.1,0.1,0.3,0.1,0.4,0.1c0.2,0,0.3,0,0.4-0.2c0.1-0.1,0.1-0.1,0.2-0.2L291.1,523z M290.2,522	c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.1-0.2,0.3-0.2,0.5H290.2z M293.5,521.3	c-0.3,0-0.5,0.1-0.6,0.4c-0.1,0.2-0.1,0.3-0.1,0.5v1.8h-0.9v-3.4h0.9v0.5c0.1-0.1,0.2-0.3,0.3-0.4c0.2-0.1,0.5-0.2,0.7-0.2	c0.3,0,0.6,0.1,0.9,0.3c0.2,0.2,0.4,0.6,0.3,0.9v2.3H294v-2.1c0-0.1,0-0.3-0.1-0.4C293.9,521.3,293.7,521.2,293.5,521.3z	 M297.5,523.4v0.7l-0.4,0c-0.3,0-0.6,0-0.9-0.2c-0.1-0.1-0.2-0.3-0.1-0.5v-2.1h-0.5v-0.6h0.5v-1h0.9v1h0.6v0.6h-0.6v1.8	c0,0.1,0,0.2,0.1,0.3c0.1,0,0.2,0.1,0.3,0.1H297.5L297.5,523.4z M300.5,520.7c0.3,0.2,0.5,0.5,0.5,0.9h-0.9c0-0.1,0-0.2-0.1-0.3	c-0.1-0.1-0.3-0.2-0.5-0.2c-0.1,0-0.3,0-0.4,0.1c-0.1,0-0.1,0.1-0.1,0.2c0,0.1,0,0.2,0.1,0.2c0.3,0.1,0.6,0.2,0.9,0.2	c0.3,0.1,0.6,0.2,0.8,0.4c0.2,0.2,0.3,0.4,0.3,0.6c0,0.3-0.1,0.6-0.4,0.8c-0.7,0.4-1.6,0.4-2.4,0c-0.3-0.2-0.4-0.5-0.4-0.9h0.9	c0,0.1,0,0.2,0.1,0.3c0.2,0.1,0.4,0.2,0.6,0.2c0.1,0,0.3,0,0.4-0.1c0.1,0,0.2-0.1,0.2-0.2c0-0.1,0-0.2-0.1-0.2	c-0.3-0.1-0.6-0.2-0.9-0.3c-0.3-0.1-0.6-0.2-0.8-0.4c-0.2-0.2-0.3-0.4-0.2-0.6c0-0.3,0.1-0.6,0.4-0.8c0.3-0.2,0.7-0.4,1-0.3	C299.8,520.5,300.2,520.6,300.5,520.7z M233.6,483.4v5.1h4.1v4.4h-4.1v17.8h-5v-27.3H233.6z M258.8,490.4c1.7-1.6,4.1-2.5,6.5-2.3	c2.6-0.1,5.1,0.9,6.9,2.8c1.8-1.9,4.3-2.9,6.9-2.8c2.4-0.2,4.7,0.7,6.4,2.3c1.5,1.5,2.2,3.8,2.2,6.7v13.7h-5v-14.2	c0.1-2.2-1.7-4.1-3.9-4.2c-2.2-0.1-4.1,1.7-4.2,3.9c0,0.1,0,0.2,0,0.3v14.2h-5v-14.2c0.1-2.2-1.7-4.1-3.9-4.2	c-2.2-0.1-4.1,1.7-4.2,3.9c0,0.1,0,0.2,0,0.3v14.2h-5v-13.7C256.6,494.2,257.3,491.9,258.8,490.4z M314.2,507.3	c-1.1,1.3-2.4,2.3-3.9,3c-3.4,1.6-7.4,1.4-10.7-0.5c-1.8-1-3.2-2.5-4.3-4.3c-2.1-3.6-2.1-8,0-11.6c1-1.8,2.5-3.2,4.3-4.2	c3.5-2,7.8-2.1,11.3-0.1c1.8,1,3.3,2.4,4.4,4.1c1.1,1.9,1.7,4,1.7,6.2c0,0.5,0,1-0.1,1.5h-17.8c0.3,1.6,1.1,3,2.3,4	c2.1,1.9,5.2,2.1,7.5,0.5c1-0.7,1.9-1.7,2.3-2.9h5.3C316.1,504.6,315.3,506.1,314.2,507.3z M311.5,497.3c-0.4-1.3-1.2-2.5-2.3-3.4	c-1.1-0.8-2.4-1.3-3.7-1.3c-1.4,0-2.7,0.4-3.8,1.3c-1.1,0.9-2,2-2.4,3.4L311.5,497.3z M244,505.1h5v5h-5V505.1z"/></svg>
 
   include /components/include/_movie
   include /components/include/_footer

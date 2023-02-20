@@ -4,6 +4,15 @@
   @include mq(m){
     margin-bottom: 50px;
   }
+  &__left {
+    justify-content: left;
+    .p_gui-list {
+      padding: 0 40px 0 0;
+      &:nth-child(2n) {
+        padding: 0 40px;
+      }
+    }
+  }
   &-list {
     padding: 0 40px;
     border-right: 1px solid #C1BEB7;

@@ -360,7 +360,7 @@
 }
 
 .indexSupport {
-  margin-bottom: 240px;
+  margin-bottom: 150px;
   @include mq(m){
     margin-bottom: 150px;
   }
@@ -390,10 +390,26 @@
     width: 550px;
     margin: 0 auto;
     border: 1px solid var(--text-color);
+    background: white;
     @include mq(m){
       width: 100%;
       font-size: 14px;
       line-height: 1.6;
+    }
+  }
+}
+.indexMvFooter {
+  position: relative;
+  z-index: 4;
+  &_images {
+    position: relative;
+    z-index: 1;
+  }
+  &_logo {
+    width: 192px;
+    z-index: 4;
+    svg {
+      fill: white;
     }
   }
 }
