@@ -40,4 +40,12 @@ let lineup = new Swiper('[data-slider="lineup"]', {
       spaceBetween: 0,
     }
   },
+  navigation: {
+    nextEl: '[data-slider-button="lineup-button-next"]',
+    prevEl: '[data-slider-button="lineup-button-prev"]',
+  },
+  pagination: {
+    el: '[data-slider-pagination="lineup-pagination"]',
+    type: 'fraction',
+  }
 });
