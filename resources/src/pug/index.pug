@@ -111,7 +111,7 @@ block content
           div.indexSlider_gallery-list.swiper-slide
             +img(`${_RESOURCES}assets/images/index/img_slider_5.jpg`, `time`)
 
-    div.p_lineup#Lineup
+    div.p_lineup
       div.t_wrapper
         h2.p_title.t_flex.u_letter-spacing50.p_title__top.u_anime-fadeUp(data-anime="addClass")
           span.p_title-name.p_title-name__large.u_weight500.t_RobotoSlab Products
@@ -526,81 +526,248 @@ block content
 
 
 
-    div.p_lineup#Shop
+    div.p_lineup
       div.t_wrapper
         p.u_letter-spacing100.t_RobotoSlab.u_weight500.p_productsTitle INTERIOR
         ul.p_gui.t_flex.t_Roboto(data-tab-target="item")
           li.p_gui-list.__isActive
-            button(type="button").u_letter-spacing50.u_weight400
-              span SOFA TABLE
+            button(type="button").u_letter-spacing50.u_weight600
+              span cafe table
           li.p_gui-list
-            button(type="button").u_letter-spacing50.u_weight400
-              span CUSHION
+            button(type="button").u_letter-spacing50.u_weight600
+              span living table
+          li.p_gui-list
+            button(type="button").u_letter-spacing50.u_weight600
+              span tv140 board
+          li.p_gui-list
+            button(type="button").u_letter-spacing50.u_weight600
+              span shelf 70
+          li.p_gui-list
+            button(type="button").u_letter-spacing50.u_weight600
+              span stool
       div.p_swichi.p_lineup-contets(data-tab-contents="item")
-        //SOFA TABLE
+        //CAFÉ table
         div.p_swichi-list
           section.p_subject
             div.t_inner
-              h3.p_subject-title.u_weight400.u_letter-spacing100 SOFA TABLE
+              h3.p_subject-title.u_weight600.u_letter-spacing50.t_Roboto cafe table
               div.p_subject-view.u_letter-spacing50.u_lineHeight
                 p
-                  |北海道の択伐されたサステナブルな楢材を敢えて使用しています。自然が生み出した表情のある木目をお楽しみいただけます。
+                  |リビングで過ごす時間にカフェを楽しむ時間にちょうど良いアイテムです。棚板も完備されているのでPCを置いて、リモートワークでも疲れにくい使い勝手の良いサイズです。
           div.p_thumbnailTabs
             div.t_inner.p_thumbnailTabs-body
               ul.p_thumbnailTabs-list(data-tab-target="item-sub")
                 li.p_thumbnailTabs-list-item.__isActive
                   button(type="button" aria-label="単品写真")
-                    +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_1.jpg`, `SOFA TABLE`)
+                    +img(`${_RESOURCES}assets/images/index/img_table_a_list_1.jpg`, `SOFA TABLE`)
                 li.p_thumbnailTabs-list-item
                   button(type="button" aria-label="ヨリ1")
-                    +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_2.jpg`, `SOFA TABLE`)
+                    +img(`${_RESOURCES}assets/images/index/img_table_a_list_2.jpg`, `SOFA TABLE`)
                 li.p_thumbnailTabs-list-item
                   button(type="button" aria-label="ヨリ2")
-                    +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_3.jpg`, `SOFA TABLE`)
+                    +img(`${_RESOURCES}assets/images/index/img_table_a_list_3.jpg`, `SOFA TABLE`)
 
               div.p_thumbnailTabs-contents(data-tab-contents="item-sub")
                 div.p_thumbnailTabs-images
-                  +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_1.jpg`, `SOFA TABLE`)
+                  +img(`${_RESOURCES}assets/images/index/img_table_a_list_1.jpg`, `SOFA TABLE`)
                 div.p_thumbnailTabs-images
-                  +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_2.jpg`, `SOFA TABLE`)
+                  +img(`${_RESOURCES}assets/images/index/img_table_a_list_2.jpg`, `SOFA TABLE`)
                 div.p_thumbnailTabs-images
-                  +img(`${_RESOURCES}assets/images/index/img_sofa_table_list_3.jpg`, `SOFA TABLE`)
+                  +img(`${_RESOURCES}assets/images/index/img_table_a_list_3.jpg`, `SOFA TABLE`)
           div.p_spec
             div.t_wrapper.p_spec-wrapper.t_inner
               p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
               ul.p_spec-item
                 li.p_spec-item-list
-                    p.u_letter-spacing50 W620×D620×H40
+                    p.u_letter-spacing50.u_lineHeight
+                      |W1100×D550×H560
+                      br
+                      small 北海道産ミズナラ三等材無垢／オイル塗装
+
+        //living table
+        div.p_swichi-list
+          section.p_subject
+            div.t_inner
+              h3.p_subject-title.u_weight600.u_letter-spacing50.t_Roboto living table
+              div.p_subject-view.u_letter-spacing50.u_lineHeight
+                p
+                  | 独自のR曲線からなる形状と丸みを帯びた面により、活動的な動線の中において、家具との接触など  和らげてくれるのもこのアイテムの特徴です。
+          div.p_thumbnailTabs
+            div.t_inner.p_thumbnailTabs-body
+              ul.p_thumbnailTabs-list(data-tab-target="item-sub")
+                li.p_thumbnailTabs-list-item.__isActive
+                  button(type="button" aria-label="単品写真")
+                    +img(`${_RESOURCES}assets/images/index/img_table_b_list_1.jpg`, `living table`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ1")
+                    +img(`${_RESOURCES}assets/images/index/img_table_b_list_2.jpg`, `living table`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ2")
+                    +img(`${_RESOURCES}assets/images/index/img_table_b_list_3.jpg`, `living table`)
+
+              div.p_thumbnailTabs-contents(data-tab-contents="item-sub")
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_b_list_1.jpg`, `living table`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_b_list_2.jpg`, `living table`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_b_list_3.jpg`, `living table`)
+          div.p_spec
+            div.t_wrapper.p_spec-wrapper.t_inner
+              p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
+              ul.p_spec-item
+                li.p_spec-item-list
+                  p.u_letter-spacing50.u_lineHeight
+                    | W1100×D550×H410
+                    br
+                    small 北海道産ミズナラ三等材無垢／オイル塗装
+
+        //tv140 board
+        div.p_swichi-list
+          section.p_subject
+            div.t_inner
+              h3.p_subject-title.u_weight600.u_letter-spacing50.t_Roboto tv140 board
+              div.p_subject-view.u_letter-spacing50.u_lineHeight
+                p
+                  | コンパクトなサイズですがしっかり大型のTV設置ができます。扉が引き戸式になっているので、ボードの前に移動しての整理などが便利です。脚部の高さもスタイリッシュに確保されていますので、電動掃除機などでの清掃もスムーズです。
+          div.p_thumbnailTabs
+            div.t_inner.p_thumbnailTabs-body
+              ul.p_thumbnailTabs-list(data-tab-target="item-sub")
+                li.p_thumbnailTabs-list-item.__isActive
+                  button(type="button" aria-label="単品写真")
+                    +img(`${_RESOURCES}assets/images/index/img_table_c_list_1.jpg`, `tv140 board`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ1")
+                    +img(`${_RESOURCES}assets/images/index/img_table_c_list_2.jpg`, `tv140 board`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ2")
+                    +img(`${_RESOURCES}assets/images/index/img_table_c_list_3.jpg`, `tv140 board`)
+
+              div.p_thumbnailTabs-contents(data-tab-contents="item-sub")
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_c_list_1.jpg`, `tv140 board`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_c_list_2.jpg`, `tv140 board`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_c_list_3.jpg`, `tv140 board`)
+          div.p_spec
+            div.t_wrapper.p_spec-wrapper.t_inner
+              p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
+              ul.p_spec-item
+                li.p_spec-item-list
+                  p.u_letter-spacing50.u_lineHeight
+                    | W1400×D380×H430
+                    br
+                    small 北海道産ミズナラ三等材無垢／オイル塗装
+
+        //shelf 70
+        div.p_swichi-list
+          section.p_subject
+            div.t_inner
+              h3.p_subject-title.u_weight600.u_letter-spacing50.t_Roboto shelf 70
+              div.p_subject-view.u_letter-spacing50.u_lineHeight
+                p
+                  | 部屋のどのスペースにおいても活躍できるのがこのスタイリッシュなシェルフです。本や小物、シェルフ空間が空洞なので、グリーンなどを置いてハイセンスなインテリアに。
+          div.p_thumbnailTabs
+            div.t_inner.p_thumbnailTabs-body
+              ul.p_thumbnailTabs-list(data-tab-target="item-sub")
+                li.p_thumbnailTabs-list-item.__isActive
+                  button(type="button" aria-label="単品写真")
+                    +img(`${_RESOURCES}assets/images/index/img_table_d_list_1.jpg`, `shelf 70`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ1")
+                    +img(`${_RESOURCES}assets/images/index/img_table_d_list_2.jpg`, `shelf 70`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ2")
+                    +img(`${_RESOURCES}assets/images/index/img_table_d_list_3.jpg`, `shelf 70`)
+
+              div.p_thumbnailTabs-contents(data-tab-contents="item-sub")
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_d_list_1.jpg`, `shelf 70`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_d_list_2.jpg`, `shelf 70`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_d_list_3.jpg`, `shelf 70`)
+          div.p_spec
+            div.t_wrapper.p_spec-wrapper.t_inner
+              p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
+              ul.p_spec-item
+                li.p_spec-item-list
+                  p.u_letter-spacing50.u_lineHeight
+                    | W700×D380×H1120
+                    br
+                    small 北海道産ミズナラ三等材無垢／オイル塗装
+
+        //stool
+        div.p_swichi-list
+          section.p_subject
+            div.t_inner
+              h3.p_subject-title.u_weight600.u_letter-spacing50.t_Roboto stool
+              div.p_subject-view.u_letter-spacing50.u_lineHeight
+                p
+                  | 軽くて持ち運びしやすいため、場所を選ばず、気楽に座って使えるスツールです。しっかり安定感のある安心安全な設計で、時にはソファの横に置くサイドテーブルとしても、フラワースタンドとしても使えます。
+          div.p_thumbnailTabs
+            div.t_inner.p_thumbnailTabs-body
+              ul.p_thumbnailTabs-list(data-tab-target="item-sub")
+                li.p_thumbnailTabs-list-item.__isActive
+                  button(type="button" aria-label="単品写真")
+                    +img(`${_RESOURCES}assets/images/index/img_table_e_list_1.jpg`, `stool`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ1")
+                    +img(`${_RESOURCES}assets/images/index/img_table_e_list_2.jpg`, `stool`)
+                li.p_thumbnailTabs-list-item
+                  button(type="button" aria-label="ヨリ2")
+                    +img(`${_RESOURCES}assets/images/index/img_table_e_list_3.jpg`, `stool`)
+
+              div.p_thumbnailTabs-contents(data-tab-contents="item-sub")
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_e_list_1.jpg`, `stool`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_e_list_2.jpg`, `stool`)
+                div.p_thumbnailTabs-images
+                  +img(`${_RESOURCES}assets/images/index/img_table_e_list_3.jpg`, `stool`)
+          div.p_spec
+            div.t_wrapper.p_spec-wrapper.t_inner
+              p.p_spec-title.u_weight400.u_letter-spacing100.t_Roboto SPEC
+              ul.p_spec-item
+                li.p_spec-item-list
+                  p.u_letter-spacing50.u_lineHeight
+                    | W347×D337×H510
+                    br
+                    small 北海道産ミズナラ三等材無垢／オイル塗装
 
       a.p_otherItem(href="#Shop")
         span.p_otherItem-icon.t_flex
           i.icon-arrow_dawn
         span.p_otherItem-text.u_letter-spacing50 他のアイテムを見る
 
-    div.indexInnovation#Innovation
+    ul.p_gallery.t_flex
+      li.p_gallery-list
+        +img(`${_RESOURCES}assets/images/index/img_gallery_a_list_1.jpg`, `time`)
+      li.p_gallery-list
+        +img(`${_RESOURCES}assets/images/index/img_gallery_a_list_2.jpg`, `time`)
+
+    div.indexInnovation
       div.t_wrapper
-        h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
-          span.p_title-name.p_title-name__large.u_weight400 Innovation
-          span.p_title-number.u_weight100 5 revolutions
-        h3.p_headline.u_weight400.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
+        h2.p_title.t_flex.p_title__top.u_anime-fadeUp(data-anime="addClass")
+          span.p_title-name.p_title-name__large.u_weight400.t_RobotoSlab.u_letter-spacing100 Functions
+          span.p_title-number.u_weight500.t_Roboto.u_letter-spacing100 6 Features
+        h3.p_headline.u_weight600.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
           span
-            | SWAYLAYソファに秘められた
-            br.u_md
-            | 「５つの⾰命」
+            | TIMEの特徴
         ul.p_tabs.t_flex.u_weight400.u_anime-fadeUp(data-tab-target="innovation" data-anime="addClass")
           li.p_tabs-list.__isActive
-            button(type="button") 理想の座り心地
+            button(type="button") デザイン性
           li.p_tabs-list
-            button(type="button") 驚きの軽さ
+            button(type="button") 木材のこだわり
           li.p_tabs-list
-            button(type="button") 上質なデザイン
+            button(type="button") 木製品の生産地
           li.p_tabs-list
-            button(type="button")
-              | イージーケアな
-              br.u_md
-              | 生地
+            button(type="button") 座り心地
           li.p_tabs-list
-            button(type="button") ヘタりにくい
+            button(type="button") 生地のこだわり
+          li.p_tabs-list
+            button(type="button") 国内製の品質
 
 
 
@@ -611,40 +778,27 @@ block content
             section.p_innovation.t_flex
               div.p_innovation-header.t_flex
                 div.p_innovation-header-name.u_anime-fadeUp(data-anime="addClass")
-                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight200 Innovation
+                  span.p_innovation-header-name-text.u_vertical.u_letter-spacing100.t_Roboto.u_weight500 Functions
                   span.p_innovation-header-name-number.t_Roboto 1
-                h2.u_weight400.u_vertical.p_innovation-header-title.u_letter-spacing150.u_anime-fadeUp(data-anime="addClass")
-                  | 『ちょっと座ってみて』と
-                  br.u_md
-                  | 勧めたくなる最高の座り心地
+                h2.u_weight600.u_vertical.p_innovation-header-title.u_letter-spacing150.u_anime-fadeUp(data-anime="addClass")
+                  | どこか懐かしいミッドセンチュリーのぬくもり。
               div.p_innovation-contents
                 div.p_innovation-contents-images
                   figure.u_anime-fadeUp(data-anime="addClass")
                     +img(`${_RESOURCES}assets/images/index/img_innovation_list_1.jpg`, `『ちょっと座ってみて』と勧めたくなる最高の座り心地`)
-                  div.p_innovation-contents-images-bubble
-                    div.p_innovation-contents-images-bubble-in
-                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
-                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
-                        | ちょっと
-                        br
-                        | 座ってみて
                 div.p_definition.u_anime-fadeUp(data-anime="addClass")
                   dl
-                    dt.t_flex
-                      i.icon-arrow_right
-                      p.u_weight400.u_letter-spacing150
-                        | 最上級のウレタンで実現した
-                        br.u_md
-                        | 理想の座り心地
-                    dd.u_lineHeight
-                      | 2種類の最上級ウレタンを組み合わせ、理想的な体圧分散を実現。Swayleyソファは、有名ブランドの最高級ソファにも用いられる最上級品質のウレタン２種をふんだんに使用しています。
+                    dt
+                      p.u_weight600.u_letter-spacing150
+                        | シンプルに。上質に。どの世代にも親和性のあるデザイン。
+                    dd.u_lineHeight.u_weight500
+                      |20世紀半ば（1940～60年代）のミッドセンチュリーデザインには、その時代を生きた人のライフスタイルを感じさせる懐かしさやぬくもりがあります。自由で斬新な雰囲気をもちあわせながら、ハイセンスなレトロフューチャーなライフスタイルを演出します。
                   dl
                     dt.t_flex
-                      i.icon-arrow_right
-                      p.u_weight400.u_letter-spacing150
-                        | 自宅でも、オフィスでも
-                    dd.u_lineHeight
-                      | ご自宅ではくつろぐ時間を贅沢なものにしてくれるアイテムとして、オフィスの応接室などでは、お客さまをもてなす最上級のアイテムとして、最上級品質のウレタンが実現する理想の座り心地を、ぜひ直接体験してみてください。
+                      p.u_weight600.u_letter-spacing150
+                        | どの空間にも馴染む装い。
+                    dd.u_lineHeight.u_weight500
+                      | ご自宅でも、オフィスでも。様々なインテリアや空間に馴染む親和性。ハイセンスなおもてなしの空間を、シンプルなシルエットで品よく演出します。
 
           div.p_swichi-list
             section.p_innovation.t_flex
@@ -660,13 +814,6 @@ block content
                 div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
                   figure
                     +img(`${_RESOURCES}assets/images/index/img_innovation_list_2.jpg`, `『ちょっと持ってみて』と促したくなる、驚くほどの軽さ`)
-                  div.p_innovation-contents-images-bubble
-                    div.p_innovation-contents-images-bubble-in
-                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
-                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
-                        | ちょっと
-                        br
-                        | 持ってみて
                 div.p_definition.u_anime-fadeUp(data-anime="addClass")
                   dl
                     dt.t_flex
@@ -690,13 +837,6 @@ block content
                 div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
                   figure
                     +img(`${_RESOURCES}assets/images/index/img_innovation_list_3.jpg`, `『居心地いいでしょ』と言いたくなる、高い質感・デザイン`)
-                  div.p_innovation-contents-images-bubble
-                    div.p_innovation-contents-images-bubble-in
-                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
-                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
-                        | 居心地
-                        br
-                        | いいでしょ
                 div.p_definition.u_anime-fadeUp(data-anime="addClass")
                   dl
                     dt.t_flex
@@ -720,11 +860,6 @@ block content
                 div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
                   figure
                     +img(`${_RESOURCES}assets/images/index/img_innovation_list_4.jpg`, `『これは魔法？』と驚くほど イージーケアな生地`)
-                  div.p_innovation-contents-images-bubble
-                    div.p_innovation-contents-images-bubble-in
-                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
-                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
-                        | これは魔法？
                 div.p_definition.u_anime-fadeUp(data-anime="addClass")
                   dl
                     dt.t_flex
@@ -748,11 +883,6 @@ block content
                 div.p_innovation-contents-images.u_anime-fadeUp(data-anime="addClass")
                   figure
                     +img(`${_RESOURCES}assets/images/index/img_innovation_list_5.jpg`, `『ヘタりにくいから長く使える』いつまでも最高の座り心地`)
-                  div.p_innovation-contents-images-bubble
-                    div.p_innovation-contents-images-bubble-in
-                      +img(`${_RESOURCES}assets/images/index/bubble.svg`, `bubble`)
-                      p.u_weight500.u_letter-spacing50.t_center.u_lineHeight
-                        | 長く使える
                 div.p_definition.u_anime-fadeUp(data-anime="addClass")
                   dl
                     dt.t_flex
@@ -765,7 +895,7 @@ block content
 
 
 
-    div.indexSupport#Support
+    div.indexSupport
       div.t_wrapper
         h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
           span.p_title-name.p_title-name__large.u_weight400 Support

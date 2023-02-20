@@ -4,14 +4,14 @@
     margin-bottom: 50px;
   }
   &-list {
-    width: 19.2%;
+    width: 15.8%;
     margin: 0 1% 0 0;
     text-align: center;
     position: relative;
     @include mq(m){
       width: 32.6%;
       margin: 0 1% 1% 0;
-      &:nth-child(3n) {
+      &:nth-child(6n) {
         margin: 0 0 1% 0;
       }
     }
@@ -23,7 +23,7 @@
     }
     &.__isActive {
       button {
-        background: #898989;
+        background: var(--main-color);
         color: white;
         &:after {
           opacity: 1;
@@ -32,11 +32,12 @@
     }
     button {
       padding: 20px;
-      background: #D8D8D6;
+      background: white;
       display: block;
       width: 100%;
-      color: #464645;
+      color: var(--main-color);
       line-height: 1;
+      font-size: 15px;
       @include mq(m){
         font-size: 11px;
         padding: 15px;
@@ -52,7 +53,7 @@
         bottom: -13px;
         content: "\e906";
         font-family: "icomoon";
-        color: #898989;
+        color: var(--main-color);
         @include mq(m){
           display: none;
         }

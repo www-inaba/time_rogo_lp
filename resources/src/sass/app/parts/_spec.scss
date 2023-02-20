@@ -21,6 +21,9 @@
         @include mq(m){
           display: block;
         }
+        small {
+          font-size: 13px;
+        }
         dt {
           width: 115px;
           @include mq(m){
@@ -32,9 +35,6 @@
           width: calc(100% - 115px);
           @include mq(m){
             width: 100%;
-            font-size: 12px;
-          }
-          small {
             font-size: 12px;
           }
         }
