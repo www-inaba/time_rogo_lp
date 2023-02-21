@@ -1,5 +1,8 @@
 .p_spec {
   margin-bottom: 50px;
+  @include mq(m){
+    margin-bottom: 80px;
+  }
   &-wrapper {
   }
   &-title {
@@ -28,7 +31,6 @@
           width: 115px;
           @include mq(m){
             width: 100%;
-            margin-bottom: 10px;
           }
         }
         dd {

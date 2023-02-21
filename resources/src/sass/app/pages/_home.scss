@@ -230,7 +230,10 @@
     &-sub {
       width: 44%;
       margin-top: auto;
-      margin-bottom: -50px;
+      margin-bottom: -110px;
+      @include mq(m){
+        margin-bottom: -50px;
+      }
     }
     &-main {
       width: 56%;
@@ -257,13 +260,13 @@
   z-index: 4;
   margin-bottom: 250px;
   @include mq(m){
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
   &_wrapper {
     background: white;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     @include mq(m){
-      padding-bottom: 60px;
+      padding-bottom: 50px;
     }
   }
   .swiper-wrapper {
@@ -408,6 +411,9 @@
   &_logo {
     width: 192px;
     z-index: 4;
+    @include mq(m){
+      width: 113px;
+    }
     svg {
       fill: white;
     }

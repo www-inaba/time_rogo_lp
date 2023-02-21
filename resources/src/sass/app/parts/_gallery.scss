@@ -1,6 +1,13 @@
 .p_gallery {
   margin-bottom: 250px;
+  @include mq(m){
+    margin-bottom: 150px;
+    display: block;
+  }
   &-list {
     width: 50%;
+    @include mq(m){
+      width: 100%;
+    }
   }
 }

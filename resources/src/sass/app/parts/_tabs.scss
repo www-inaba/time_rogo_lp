@@ -11,7 +11,7 @@
     @include mq(m){
       width: 32.6%;
       margin: 0 1% 1% 0;
-      &:nth-child(6n) {
+      &:nth-child(3n) {
         margin: 0 0 1% 0;
       }
     }

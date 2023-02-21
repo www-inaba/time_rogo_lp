@@ -1,5 +1,8 @@
 .p_innovation {
   margin-bottom: 250px;
+  @include mq(m){
+    margin-bottom: 40px;
+  }
   &-header {
     width: 220px;
     @include mq(m){

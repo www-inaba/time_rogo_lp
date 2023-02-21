@@ -1,3 +1,6 @@
 .p_lineup {
   margin-bottom: 250px;
+  @include mq(m){
+    margin-bottom: 0;
+  }
 }

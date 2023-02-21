@@ -7,6 +7,9 @@
   }
   &-list {
     margin-bottom: 60px;
+    @include mq(m){
+      margin-bottom: 0;
+    }
     &-item {
       transform: scale(0.7);
       transition: 0.5s all var(--transition);
