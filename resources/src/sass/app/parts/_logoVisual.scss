@@ -1,0 +1,18 @@
+.p_logoVisual {
+  position: relative;
+  z-index: 4;
+  &-images {
+    position: relative;
+    z-index: 1;
+  }
+  &-name {
+    width: 192px;
+    z-index: 4;
+    @include mq(m){
+      width: 113px;
+    }
+    svg {
+      fill: white;
+    }
+  }
+}

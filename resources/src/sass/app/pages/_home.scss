@@ -401,21 +401,3 @@
     }
   }
 }
-.indexMvFooter {
-  position: relative;
-  z-index: 4;
-  &_images {
-    position: relative;
-    z-index: 1;
-  }
-  &_logo {
-    width: 192px;
-    z-index: 4;
-    @include mq(m){
-      width: 113px;
-    }
-    svg {
-      fill: white;
-    }
-  }
-}
