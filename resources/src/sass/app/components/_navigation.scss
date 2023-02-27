@@ -20,6 +20,13 @@
     font-size: 12px;
     &-item {
       margin: 0 60px 0 0;
+      a {
+        opacity: 1;
+        transition: all .5s var(--transition);
+        &:hover {
+          opacity: .4;
+        }
+      }
     }
   }
 }

@@ -34,6 +34,13 @@
           margin-bottom: 80px;
         }
       }
+      a {
+        opacity: 1;
+        transition: all .5s var(--transition);
+        &:hover {
+          opacity: .4;
+        }
+      }
     }
   }
   &-sns {
@@ -42,6 +49,13 @@
     &-item {
       font-size: 20px;
       margin: 0 25px;
+      a {
+        opacity: 1;
+        transition: all .5s var(--transition);
+        &:hover {
+          opacity: .4;
+        }
+      }
     }
   }
   &-bg {

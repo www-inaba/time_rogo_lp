@@ -7,6 +7,7 @@ import Responsive from "../modules/_Responsive";
 //Top
 let mvSlider = new Swiper('[data-slider="mvSlider"]', {
   loop: true,
+  allowTouchMove: false,
   effect: "fade",
   autoplay: {
     delay: 3000,

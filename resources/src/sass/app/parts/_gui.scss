@@ -51,8 +51,13 @@
       font-size: 16px;
       width: 100%;
       font-style:inherit;
+      transition: all .5s var(--transition);
+      opacity: 1;
       @include mq(m){
         font-size: 12px;
+      }
+      &:hover {
+        opacity: .4;
       }
       span {
         display: inline-block;
