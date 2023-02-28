@@ -1,2 +1,9 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
-node_modules
+node_modules/
+stg.time-furniture.jp/
+test.time-furniture.jp/
+deploy/
+
+/.user.ini
+/.htaccess
+/.htpasswd
