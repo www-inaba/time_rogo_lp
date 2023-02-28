@@ -17,15 +17,30 @@ block content
   div.mv.swiper-container.u_anime-fade(data-slider="mvSlider" data-anime="addClass")
     div.mv_list.swiper-wrapper
       div.mv_list-item.swiper-slide
-        +img(`${_RESOURCES}assets/images/index/mv_1.jpg`, `time`)
+        picture
+          source(media=`(min-width:769px)` srcset!=`${_RESOURCES}assets/images/index/mv_1.jpg`)
+          source(media=`(max-width:768px)` srcset!=`${_RESOURCES}assets/images/mobile/index/mv_1.jpg`)
+          +img(`${_RESOURCES}assets/images/index/mv_1.jpg`, `time`)
       div.mv_list-item.swiper-slide
-        +img(`${_RESOURCES}assets/images/index/mv_2.jpg`, `time`)
+        picture
+          source(media=`(min-width:769px)` srcset!=`${_RESOURCES}assets/images/index/mv_2.jpg`)
+          source(media=`(max-width:768px)` srcset!=`${_RESOURCES}assets/images/mobile/index/mv_2.jpg`)
+          +img(`${_RESOURCES}assets/images/index/mv_2.jpg`, `time`)
       div.mv_list-item.swiper-slide
-        +img(`${_RESOURCES}assets/images/index/mv_3.jpg`, `time`)
+        picture
+          source(media=`(min-width:769px)` srcset!=`${_RESOURCES}assets/images/index/mv_3.jpg`)
+          source(media=`(max-width:768px)` srcset!=`${_RESOURCES}assets/images/mobile/index/mv_3.jpg`)
+          +img(`${_RESOURCES}assets/images/index/mv_3.jpg`, `time`)
       div.mv_list-item.swiper-slide
-        +img(`${_RESOURCES}assets/images/index/mv_4.jpg`, `time`)
+        picture
+          source(media=`(min-width:769px)` srcset!=`${_RESOURCES}assets/images/index/mv_4.jpg`)
+          source(media=`(max-width:768px)` srcset!=`${_RESOURCES}assets/images/mobile/index/mv_4.jpg`)
+          +img(`${_RESOURCES}assets/images/index/mv_4.jpg`, `time`)
       div.mv_list-item.swiper-slide
-        +img(`${_RESOURCES}assets/images/index/mv_5.jpg`, `time`)
+        picture
+          source(media=`(min-width:769px)` srcset!=`${_RESOURCES}assets/images/index/mv_5.jpg`)
+          source(media=`(max-width:768px)` srcset!=`${_RESOURCES}assets/images/mobile/index/mv_5.jpg`)
+          +img(`${_RESOURCES}assets/images/index/mv_5.jpg`, `time`)
 
   main(role="main")
     div.t_wrapper.u_bg.indexSwayley.t_flex
@@ -264,8 +279,6 @@ block content
                               | ヴィンテージな品のある色合いのグリーン。
                               br
                               | お部屋に映える印象的でハイセンスなワンポイントアイテムに。
-
-
                       //スライド2
                       div.swiper-slide.p_slider-list-item
                         div.p_slider-list-item-imgaes
@@ -331,7 +344,6 @@ block content
               span.p_otherItem-icon.t_flex
                 i.icon-arrow_dawn
               span.p_otherItem-text.u_letter-spacing50 他のアイテムを見る
-
 
 
           //1 seat sofa
