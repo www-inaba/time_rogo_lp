@@ -10,6 +10,9 @@
       .p_gui-list {
         width: 33%;
         margin-bottom: 20px;
+        &:nth-child(3n) {
+          border-right: none;
+        }
       }
     }
   }
@@ -17,8 +20,14 @@
     justify-content: left;
     .p_gui-list {
       padding: 0 40px 0 0;
+      @include mq(m){
+        padding: 0 20px 0 0;
+      }
       &:nth-child(2n) {
         padding: 0 40px;
+        @include mq(m){
+          padding: 0 20px;
+        }
       }
     }
   }
@@ -54,7 +63,7 @@
       transition: all .5s var(--transition);
       opacity: 1;
       @include mq(m){
-        font-size: 12px;
+        font-size: 10px;
       }
       &:hover {
         opacity: .4;
