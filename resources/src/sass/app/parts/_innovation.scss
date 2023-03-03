@@ -52,12 +52,10 @@
       }
     }
     &-title {
-      font-size: 20px;
+      width: 20px;
       @include mq(m){
-        writing-mode: inherit;
-        font-size: 16px;
         margin-bottom: 50px;
-        line-height:2;
+        width: 300px;
       }
     }
   }
