@@ -13,6 +13,9 @@
         &:nth-child(3n) {
           border-right: none;
         }
+        &:nth-child(5n) {
+          border-right: 1px solid #C1BEB7;
+        }
       }
     }
   }
@@ -38,6 +41,13 @@
     position: relative;
     @include mq(m){
       padding: 0 10px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
     }
     &.__isActive {
       button {
