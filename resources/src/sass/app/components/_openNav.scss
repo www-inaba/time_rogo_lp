@@ -16,7 +16,7 @@
     pointer-events: auto;
   }
   &-contents {
-    padding: 215px 0;
+    padding: 250px 0;
     position: relative;
     z-index: 4;
     @include mq(m){
@@ -26,7 +26,7 @@
   &-list {
     text-align: center;
     &-item {
-      margin-bottom: 50px;
+      margin-bottom: 80px;
       font-size: 18px;
       @include mq(m){
         font-size: 16px;
