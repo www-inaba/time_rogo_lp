@@ -35,7 +35,7 @@ let gallery = new Swiper('[data-slider="gallery"]', {
 let lineup = new Swiper('[data-slider="lineup"]', {
   slidesPerView: 1,
   spaceBetween: -60,
-  loop: true,
+  loop: false,
   breakpoints: {
     769: {
       spaceBetween: 0,
