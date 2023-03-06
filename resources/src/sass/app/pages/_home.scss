@@ -151,7 +151,7 @@
     }
   }
   &_headline {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 24px;
     @include mq(m){
       line-height: 1.8;
@@ -392,7 +392,6 @@
     text-align: center;
     width: 550px;
     margin: 0 auto;
-    border: 1px solid var(--text-color);
     background: white;
     @include mq(m){
       width: 100%;
