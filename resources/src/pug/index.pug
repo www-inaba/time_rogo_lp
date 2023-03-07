@@ -55,7 +55,7 @@ block content
     div.indexStory#Concept
       div.p_background.t_wrapper.indexStory_wrapper
         div.p_background-wrapper
-          h2.indexStory_title.t_RobotoSlab.u_letter-spacing100.u_weight100.u_anime-fadeUp(data-anime="addClass") Concept
+          h2.indexStory_title.t_RobotoSlab.u_letter-spacing100.u_weight700.u_anime-fadeUp(data-anime="addClass") Concept
           h3.indexStory_headline.u_letter-spacing200.u_anime-fadeUp.u_weight600(data-anime="addClass")
             span
               |半世紀の時を感じ、
@@ -79,7 +79,7 @@ block content
           div.indexOffer_contents
             h2.p_title.t_flex.u_letter-spacing50.u_anime-fadeUp(data-anime="addClass")
               span.p_title-name.u_weight600.t_Roboto TIME
-              span.p_title-number.u_weight500.t_RobotoSlab Concept : 01
+              span.p_title-number.u_weight700.t_RobotoSlab Concept : 01
             section.p_section
               h3.p_section-title.u_lineHeight.u_letter-spacing150.u_weight600.u_anime-fadeUp(data-anime="addClass")
                 | 時を感じる
@@ -103,7 +103,7 @@ block content
             div.indexShape_contents
               h2.p_title.t_flex.u_letter-spacing50.u_anime-fadeUp(data-anime="addClass")
                 span.p_title-name.u_weight600.t_Roboto TIME
-                span.p_title-number.u_weight500.t_RobotoSlab Concept : 02
+                span.p_title-number.u_weight700.t_RobotoSlab Concept : 02
               section.p_section
                 h3.p_section-title.u_lineHeight.u_letter-spacing150.u_weight600.u_anime-fadeUp(data-anime="addClass")
                   | 時を超える
@@ -134,11 +134,11 @@ block content
     div.p_lineup#Products
       div.t_wrapper
         h2.p_title.t_flex.u_letter-spacing50.p_title__top.u_anime-fadeUp(data-anime="addClass")
-          span.p_title-name.p_title-name__large.u_weight500.t_RobotoSlab Products
-          span.p_title-number.u_weight500.t_RobotoSlab 8 Series
+          span.p_title-name.p_title-name__large.u_weight700.t_RobotoSlab Products
+          span.p_title-number.u_weight500.t_Roboto 8 Series
         h3.p_headline.u_weight600.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
           span 製品紹介
-        p.u_letter-spacing100.t_RobotoSlab.u_weight500.p_productsTitle SOFA
+        p.u_letter-spacing100.t_RobotoSlab.u_weight700.p_productsTitle SOFA
         ul.p_gui.t_flex.t_Roboto(data-tab-target="products")
           li.p_gui-list.__isActive
             button(type="button").u_letter-spacing50.u_weight600
@@ -175,7 +175,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 BEIGE
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ベージュ
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 ベージュ
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_1.jpg`, `BEIGE`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -193,7 +193,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 GREEN
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 グリーン
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 グリーン
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_2.jpg`, `GREEN`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -211,7 +211,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 blue
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ブルー
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 ブルー
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_3.jpg`, `GREEN`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -234,16 +234,17 @@ block content
                   ul.p_spec-item.u_lineHeight
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 Sofa
+                        dt.u_letter-spacing50.u_weight400.t_Roboto Sofa
                         dd.u_letter-spacing50
-                          |W1690×D700×H700 SH410mm
+                          span.t_Roboto.u_weight400
+                            |W1690×D700×H700 SH410mm
                           br
                           |脚部：北海道産ミズナラ三等材無垢／オイル塗装
                           br
                           small ※肘パーツはオプション設定
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 fabric
+                        dt.u_letter-spacing50.u_weight400.t_Roboto fabric
                         dd.u_letter-spacing50 アクリル42%、ポリエステル39%、コットン19%（リサイクル糸47%）
 
             a.p_otherItem(href="#Products")
@@ -271,7 +272,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 BEIGE
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ベージュ
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 ベージュ
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_1.jpg`, `BEIGE`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -287,7 +288,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 GREEN
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 グリーン
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 グリーン
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_2.jpg`, `GREEN`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -305,7 +306,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 blue
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ブルー
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 ブルー
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_3.jpg`, `blue`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -328,16 +329,17 @@ block content
                   ul.p_spec-item.u_lineHeight
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 Sofa
+                        dt.u_letter-spacing50.u_weight400.t_Roboto Sofa
                         dd.u_letter-spacing50
-                          |W1290×D700×H700 SH410mm
+                          span.t_Roboto.u_weight400
+                            |W1290×D700×H700 SH410mm
                           br
                           | 脚部：北海道産ミズナラ三等材無垢／オイル塗装
                           br
                           small ※肘パーツはオプション設定
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 fabric
+                        dt.u_letter-spacing50.u_weight400.t_Roboto fabric
                         dd.u_letter-spacing50 アクリル42%、ポリエステル39%、コットン19%（リサイクル糸47%）
 
             a.p_otherItem(href="#Products")
@@ -366,7 +368,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 BEIGE
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ベージュ
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 ベージュ
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_1.jpg`, `BEIGE`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -384,7 +386,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 GREEN
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 グリーン
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 グリーン
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_2.jpg`, `GREEN`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -400,7 +402,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 BLUE
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ブルー
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 ブルー
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_3.jpg`, `BLUE`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -421,16 +423,17 @@ block content
                   ul.p_spec-item.u_lineHeight
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 Sofa
+                        dt.u_letter-spacing50.u_weight400.t_RobotoSofa
                         dd.u_letter-spacing50
-                          | W890×D700×H700 SH410mm
+                          span.t_Roboto.u_weight400
+                            | W890×D700×H700 SH410mm
                           br
                           | 脚部：北海道産ミズナラ三等材無垢／オイル塗装
                           br
                           small ※肘パーツはオプション設定
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 fabric
+                        dt.u_letter-spacing50.u_weight400.t_Roboto fabric
                         dd.u_letter-spacing50 アクリル42%、ポリエステル39%、コットン19%（リサイクル糸47%）
 
             a.p_otherItem(href="#Products")
@@ -461,7 +464,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 BEIGE
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ベージュ
+                              p.p_slider-list-item-view-header-title-jp.o.u_letter-spacing50.u_weight500 ベージュ
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_1.jpg`, `BLUE`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -477,7 +480,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 GREEN
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 グリーン
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 グリーン
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_2.jpg`, `GREEN`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -493,7 +496,7 @@ block content
                           div.p_slider-list-item-view-header
                             div.p_slider-list-item-view-header-title
                               p.p_slider-list-item-view-header-title-en.t_Roboto.u_letter-spacing100.u_weight600 BLUE
-                              p.p_slider-list-item-view-header-title-jp.t_Roboto.u_letter-spacing50.u_weight400 ブルー
+                              p.p_slider-list-item-view-header-title-jp.u_letter-spacing50.u_weight500 ブルー
                             div.p_slider-list-item-view-header-thumbnail
                               +img(`${_RESOURCES}assets/images/index/img_colors_3.jpg`, `BLUE`)
                           div.p_slider-list-item-view-text.u_lineHeight.u_letter-spacing50
@@ -515,16 +518,17 @@ block content
                   ul.p_spec-item.u_lineHeight
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 Sofa
+                        dt.u_letter-spacing50.u_weight400.t_Roboto Sofa
                         dd.u_letter-spacing50
-                          |W570×D570×H410
+                          span.t_Roboto.u_weight400
+                            |W570×D570×H410
                           br
                           | 脚部：北海道産ミズナラ三等材無垢／オイル塗装
                           br
                           small ※肘パーツはオプション設定
                     li.p_spec-item-list
                       dl.t_flex
-                        dt.u_letter-spacing50.u_weight500 fabric
+                        dt.u_letter-spacing50.u_weight400.t_Roboto fabric
                         dd.u_letter-spacing50 アクリル42%、ポリエステル39%、コットン19%（リサイクル糸47%）
 
             a.p_otherItem(href="#Products")
@@ -536,7 +540,7 @@ block content
 
     div.p_lineup#Interior
       div.t_wrapper
-        p.u_letter-spacing100.t_RobotoSlab.u_weight500.p_productsTitle INTERIOR
+        p.u_letter-spacing100.t_RobotoSlab.u_weight700.p_productsTitle INTERIOR
         ul.p_gui.t_flex.t_Roboto.p_gui__three(data-tab-target="item")
           li.p_gui-list.__isActive
             button(type="button").u_letter-spacing50.u_weight600
@@ -588,7 +592,8 @@ block content
               ul.p_spec-item
                 li.p_spec-item-list
                     p.u_letter-spacing50.u_lineHeight
-                      |W1100×D550×H560
+                      span.u_weight400.t_Roboto
+                        |1100×D550×H560
                       br
                       small 北海道産ミズナラ三等材無垢／オイル塗装
 
@@ -626,7 +631,8 @@ block content
               ul.p_spec-item
                 li.p_spec-item-list
                   p.u_letter-spacing50.u_lineHeight
-                    | W1100×D550×H410
+                    span.t_Roboto.u_weight400
+                      | W1100×D550×H410
                     br
                     small 北海道産ミズナラ三等材無垢／オイル塗装
 
@@ -664,7 +670,8 @@ block content
               ul.p_spec-item
                 li.p_spec-item-list
                   p.u_letter-spacing50.u_lineHeight
-                    | W1400×D380×H430
+                    span.t_Roboto.u_weight400
+                      | W1400×D380×H430
                     br
                     small 北海道産ミズナラ三等材無垢／オイル塗装
 
@@ -702,7 +709,8 @@ block content
               ul.p_spec-item
                 li.p_spec-item-list
                   p.u_letter-spacing50.u_lineHeight
-                    | W700×D380×H1120
+                    span.t_Roboto.u_weight400
+                      | W700×D380×H1120
                     br
                     small 北海道産ミズナラ三等材無垢／オイル塗装
 
@@ -740,7 +748,8 @@ block content
               ul.p_spec-item
                 li.p_spec-item-list
                   p.u_letter-spacing50.u_lineHeight
-                    | W347×D337×H510
+                    span.t_Roboto.u_weight400
+                      | W347×D337×H510
                     br
                     small 北海道産ミズナラ三等材無垢／オイル塗装
 
@@ -758,7 +767,7 @@ block content
     div.indexInnovation#Functions
       div.t_wrapper
         h2.p_title.t_flex.p_title__top.u_anime-fadeUp(data-anime="addClass")
-          span.p_title-name.p_title-name__large.u_weight400.t_RobotoSlab.u_letter-spacing100 Functions
+          span.p_title-name.p_title-name__large.u_weight700.t_RobotoSlab.u_letter-spacing100 Functions
           span.p_title-number.u_weight500.t_Roboto.u_letter-spacing100 6 Features
         h3.p_headline.u_weight600.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
           span
@@ -944,7 +953,7 @@ block content
     div.indexSupport#Support
       div.t_wrapper
         h2.p_title.t_flex.u_letter-spacing50.t_Roboto.p_title__top.u_anime-fadeUp(data-anime="addClass")
-          span.p_title-name.p_title-name__large.u_weight600 Support
+          span.p_title-name.p_title-name__large.u_weight700.t_RobotoSlab Support
           span.p_title-number.u_weight500 To Customers
         h3.p_headline.u_weight600.u_letter-spacing150.u_lineHeight.u_anime-fadeUp(data-anime="addClass")
           span TIMEを購⼊された⽅へ
