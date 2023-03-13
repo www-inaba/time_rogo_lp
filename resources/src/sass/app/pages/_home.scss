@@ -237,9 +237,6 @@
     }
     &-main {
       width: 56%;
-      @include mq(m){
-        margin-bottom: -50px;
-      }
     }
   }
   &_view {
