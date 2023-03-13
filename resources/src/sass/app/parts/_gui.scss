@@ -19,6 +19,17 @@
       }
     }
   }
+  &__jp {
+    .p_gui-list {
+      button {
+        span {
+          @include mq(m){
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
   &__left {
     justify-content: left;
     .p_gui-list {
