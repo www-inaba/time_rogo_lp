@@ -233,13 +233,12 @@
       margin-bottom: -110px;
       @include mq(m){
         margin-bottom: -50px;
-        width: calc(100% - 226px);
       }
     }
     &-main {
       width: 56%;
       @include mq(m){
-        width: 226px;
+        margin-bottom: -50px;
       }
     }
   }
