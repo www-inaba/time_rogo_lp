@@ -83,7 +83,7 @@
       font-style:inherit;
       transition: all .5s var(--transition);
       opacity: 1;
-      font-weight: 600;
+      font-weight: 700;
       @include mq(m){
         font-size: 10px;
       }
@@ -93,7 +93,7 @@
       span {
         display: inline-block;
         position: relative;
-        font-weight: 600;
+        font-weight: 700;
       }
     }
   }
